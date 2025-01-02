@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23605" systemVersion="24B91" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Activity" representedClassName=".Activity" syncable="YES">
+        <attribute name="activitydescription" optional="YES" attributeType="String"/>
+        <attribute name="activityId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="activityTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="activityTypeName" optional="YES" attributeType="String"/>
+        <attribute name="addressMasterID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkInCheckOutID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkInOutLattitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="checkInOutLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="checkInTime" optional="YES" attributeType="String"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="customerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerName" optional="YES" attributeType="String"/>
+        <attribute name="imageLattitude" optional="YES" attributeType="String"/>
+        <attribute name="imageLongitude" optional="YES" attributeType="String"/>
+        <attribute name="imageTimeStamp" optional="YES" attributeType="String"/>
+        <attribute name="isActive" optional="YES" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedTime" optional="YES" attributeType="String"/>
+        <attribute name="modifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nextActionTime" optional="YES" attributeType="String"/>
+        <attribute name="noOfParticipants" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="originalNextActionTime" optional="YES" attributeType="String"/>
+        <attribute name="picture1" optional="YES" attributeType="String"/>
+        <attribute name="picture2" optional="YES" attributeType="String"/>
+        <attribute name="picture3" optional="YES" attributeType="String"/>
+        <attribute name="picture4" optional="YES" attributeType="String"/>
+        <attribute name="picture5" optional="YES" attributeType="String"/>
+        <attribute name="statusDescription" optional="YES" attributeType="String"/>
+        <relationship name="activityCheckInCheckOutList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ActivityCheckinCheckout" inverseName="activity" inverseEntity="ActivityCheckinCheckout"/>
+        <relationship name="activityParticipantList" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ActivityParticipant" inverseName="activity" inverseEntity="ActivityParticipant"/>
+        <relationship name="addressDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AddressList" inverseName="activityDetail" inverseEntity="AddressList"/>
+    </entity>
+    <entity name="ActivityCheckinCheckout" representedClassName="ActivityCheckinCheckout" syncable="YES">
+        <attribute name="activityDate" optional="YES" attributeType="String"/>
+        <attribute name="activityID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkInTime" optional="YES" attributeType="String"/>
+        <attribute name="checkOutTime" optional="YES" attributeType="String"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdByName" optional="YES" attributeType="String"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lattitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <relationship name="activity" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="activityCheckInCheckOutList" inverseEntity="Activity"/>
+        <relationship name="addressDetails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AddressList"/>
+    </entity>
+    <entity name="ActivityParticipant" representedClassName="ActivityParticipant" syncable="YES">
+        <attribute name="activityId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="activitypaticipantid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdby" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="customerId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerMobile" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerName" optional="YES" attributeType="String"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="activity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" inverseName="activityParticipantList" inverseEntity="Activity"/>
+    </entity>
+    <entity name="AddressList" representedClassName="AddressList" syncable="YES">
+        <attribute name="addressID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="addressLine1" optional="YES" attributeType="String"/>
+        <attribute name="addressLine2" optional="YES" attributeType="String"/>
+        <attribute name="addressMasterID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="custVenID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lattitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <attribute name="pincode" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="verified" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="activityDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" inverseName="addressDetails" inverseEntity="Activity"/>
+        <relationship name="customerDetails" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="CustomerDetails" inverseName="addressList" inverseEntity="CustomerDetails"/>
+        <relationship name="defaultAddress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DefaultSetting" inverseName="clientaddress" inverseEntity="DefaultSetting"/>
+        <relationship name="tempcustomerDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TempcustomerDetails" inverseName="addressList" inverseEntity="TempcustomerDetails"/>
+        <relationship name="vendorDetails" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Vendor" inverseName="addressList" inverseEntity="Vendor"/>
+    </entity>
+    <entity name="AttendanceHistory" representedClassName="AttendanceHistory" syncable="YES">
+        <attribute name="attendanceDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="checkInAddress" optional="YES" attributeType="String"/>
+        <attribute name="checkInAddressID" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="checkInApproved" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="checkInAttendanceType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkinLattitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="checkinLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="checkInPhotoURL" optional="YES" attributeType="String"/>
+        <attribute name="checkInTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="checkOutAddress" optional="YES" attributeType="String"/>
+        <attribute name="checkOutAddressID" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="checkOutApproved" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="checkOutAttendanceType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkoutLattitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="checkoutLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="checkOutPhotoURL" optional="YES" attributeType="String"/>
+        <attribute name="checkOutTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="early" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="String"/>
+        <attribute name="entity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="internalBaseClassIdentifier" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lastCheckOutKM" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="late" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="leaveDay" optional="YES" attributeType="String"/>
+        <attribute name="leaveType" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="manualApproved" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="manualAttendance" optional="YES" attributeType="String"/>
+        <attribute name="minEarly" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="minLate" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="modifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="present" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="reason" optional="YES" attributeType="String"/>
+        <attribute name="startTime" optional="YES" attributeType="String"/>
+        <attribute name="timeIn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="timeOut" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="totalTime" optional="YES" attributeType="String"/>
+        <attribute name="totalWorkTime" optional="YES" attributeType="String"/>
+        <attribute name="updatedTimeIn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedTimeOut" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="attendanceuser" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="AttendanceUser" inverseName="attendanceHistory" inverseEntity="AttendanceUser"/>
+    </entity>
+    <entity name="AttendanceUser" representedClassName="AttendanceUser" syncable="YES">
+        <attribute name="companyId" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="deviceid" optional="YES" attributeType="String"/>
+        <attribute name="emailID" optional="YES" attributeType="String"/>
+        <attribute name="entity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="picture" optional="YES" attributeType="String"/>
+        <attribute name="roleId" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userImagePath" optional="YES" attributeType="String"/>
+        <relationship name="attendanceHistory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AttendanceHistory" inverseName="attendanceuser" inverseEntity="AttendanceHistory"/>
+        <relationship name="attendanceUserHistory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AttendanceUserHistory" inverseName="attendanceuser" inverseEntity="AttendanceUserHistory"/>
+    </entity>
+    <entity name="AttendanceUserHistory" representedClassName="AttendanceUserHistory" syncable="YES">
+        <attribute name="attendanceDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="checkInAddress" optional="YES" attributeType="String"/>
+        <attribute name="checkInAddressID" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="checkInApproved" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="checkInAttendanceType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkInClientName" optional="YES" attributeType="String"/>
+        <attribute name="checkInPhotoURL" optional="YES" attributeType="String"/>
+        <attribute name="checkInTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="checkOutAddress" optional="YES" attributeType="String"/>
+        <attribute name="checkOutAddressID" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="checkOutApproved" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="checkOutAttendanceType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkOutClientName" optional="YES" attributeType="String"/>
+        <attribute name="checkOutPhotoURL" optional="YES" attributeType="String"/>
+        <attribute name="checkOutTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="clientName" optional="YES" attributeType="String"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="early" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="entity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="internalBaseClassIdentifier" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="late" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="leaveDay" optional="YES" attributeType="String"/>
+        <attribute name="leaveType" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="manualApproved" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="manualAttendance" optional="YES" attributeType="String"/>
+        <attribute name="minEarly" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="minLate" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="modifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="present" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="reason" optional="YES" attributeType="String"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="timeIn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="timeOut" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="totalTime" optional="YES" attributeType="String"/>
+        <attribute name="totalWorkTime" optional="YES" attributeType="String"/>
+        <attribute name="updatedTimeIn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedTimeOut" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="attendanceuser" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="AttendanceUser" inverseName="attendanceUserHistory" inverseEntity="AttendanceUser"/>
+    </entity>
+    <entity name="Company" representedClassName="Company" syncable="YES">
+        <attribute name="autoLeaveUpdate" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="companyTypeID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerType" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="homeType" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isFifteenMinTracking" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isShelfieAllowed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="modifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="notificationLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="officeType" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="ownerID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="payrollEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="saturdayPolicy" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="superSalesCustomerTagging" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="trackingInteval" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="trackingStartTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="trakingEndTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="travelLocalType" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="travelUpCountryType" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="userid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vendorType" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="workingDays" optional="YES" attributeType="String"/>
+        <attribute name="workingSaturday" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CompanyMenus" representedClassName="CompanyMenus" syncable="YES">
+        <attribute name="companyID" optional="YES" attributeType="Integer 32" defaultValueString="0"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 32" defaultValueString="0"/>
+        <attribute name="isVisible" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="menuID" optional="YES" attributeType="Integer 32" defaultValueString="0"/>
+        <attribute name="menuLocalText" optional="YES" attributeType="String"/>
+        <attribute name="menuValue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CompanyUsers" representedClassName="CompanyUsers" syncable="YES">
+        <attribute name="deviceID" optional="YES" attributeType="String"/>
+        <attribute name="emailID" optional="YES" attributeType="String"/>
+        <attribute name="emailVerified" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="entity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="invalidLoginAttempt" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="mobileNo1" optional="YES" attributeType="String"/>
+        <attribute name="mobileNo2" optional="YES" attributeType="String"/>
+        <attribute name="otp" optional="YES" attributeType="String"/>
+        <attribute name="otpGenerateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="picture" optional="YES" attributeType="String"/>
+        <attribute name="role_application_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="role_desc" optional="YES" attributeType="String"/>
+        <attribute name="role_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="manager" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Manager" inverseName="companyuser" inverseEntity="Manager"/>
+        <relationship name="permanent_address" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="PermanentAddresss" inverseName="companyuser" inverseEntity="PermanentAddresss"/>
+    </entity>
+    <entity name="Contact" representedClassName="Contact" syncable="YES">
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="customerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerJoinDate" optional="YES" attributeType="String"/>
+        <attribute name="customerName" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="designation" optional="YES" attributeType="String"/>
+        <attribute name="emailID" optional="YES" attributeType="String"/>
+        <attribute name="favourableID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="keyRole" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="mobile" optional="YES" attributeType="String"/>
+        <attribute name="taggedStatus" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CustomerDetails" representedClassName="CustomerDetails" syncable="YES">
+        <attribute name="anniversaryDate" optional="YES" attributeType="String"/>
+        <attribute name="birthDate" optional="YES" attributeType="String"/>
+        <attribute name="cCode" optional="YES" attributeType="String"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="companyTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="contactLastName" optional="YES" attributeType="String"/>
+        <attribute name="contactName" optional="YES" attributeType="String"/>
+        <attribute name="contactNo" optional="YES" attributeType="String"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="customerClass" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerGSTNo" optional="YES" attributeType="String"/>
+        <attribute name="customerImage" optional="YES" attributeType="String"/>
+        <attribute name="customerImage2" optional="YES" attributeType="String"/>
+        <attribute name="customerImage3" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="distributorID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="distributorName" optional="YES" attributeType="String"/>
+        <attribute name="emailID" optional="YES" attributeType="String"/>
+        <attribute name="emailTo" optional="YES" attributeType="String"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isAdminSuperAdmin" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="keyCustomer" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="keyCustomerVendor" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="landlineNo" optional="YES" attributeType="String"/>
+        <attribute name="lastModified" optional="YES" attributeType="String"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="logo" optional="YES" attributeType="String"/>
+        <attribute name="mobileNo" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="ownerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="priviledgeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="segmentID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="statusID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taggedRoleID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taggedStatus" optional="YES" attributeType="String"/>
+        <attribute name="taggedTo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taggedUserName" optional="YES" attributeType="String"/>
+        <attribute name="taxType" optional="YES" attributeType="String"/>
+        <attribute name="territoryCode" optional="YES" attributeType="String"/>
+        <attribute name="territoryID" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="townID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="townName" optional="YES" attributeType="String"/>
+        <attribute name="transactional" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="vATCode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitFrequency" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitingCard" optional="YES" attributeType="String"/>
+        <relationship name="addressList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="AddressList" inverseName="customerDetails" inverseEntity="AddressList"/>
+        <relationship name="custKyc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KYCDetailOFCustomer" inverseName="customerDetails" inverseEntity="KYCDetailOFCustomer"/>
+        <relationship name="taggedToIDList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="TaggedToIDList" inverseName="customerDetails" inverseEntity="TaggedToIDList"/>
+    </entity>
+    <entity name="CustomerSegment" representedClassName="CustomerSegment" syncable="YES">
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerSegmentIndexID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerSegmentValue" optional="YES" attributeType="String"/>
+        <attribute name="customerType" optional="YES" attributeType="String"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="DefaultSetting" representedClassName="DefaultSetting" syncable="YES">
+        <attribute name="address_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="client_name" optional="YES" attributeType="String"/>
+        <attribute name="clientvendorid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="company_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="locationtype" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="modified_by" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="user_location_type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO"/>
+        <relationship name="clientaddress" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="AddressList" inverseName="defaultAddress" inverseEntity="AddressList"/>
+    </entity>
+    <entity name="KYCDetailOFCustomer" representedClassName="KYCDetailOFCustomer" syncable="YES">
+        <attribute name="approvedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedStatusKyc1" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedStatusKyc2" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedStatusKyc3" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdDate" optional="YES" attributeType="String"/>
+        <attribute name="customerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="kyc1Number" optional="YES" attributeType="String"/>
+        <attribute name="kyc1Type" optional="YES" attributeType="String"/>
+        <attribute name="kyc1Url" optional="YES" attributeType="String"/>
+        <attribute name="kyc2Number" optional="YES" attributeType="String"/>
+        <attribute name="kyc2Type" optional="YES" attributeType="String"/>
+        <attribute name="kyc2Url" optional="YES" attributeType="String"/>
+        <attribute name="kyc3Number" optional="YES" attributeType="String"/>
+        <attribute name="kyc3Type" optional="YES" attributeType="String"/>
+        <attribute name="kyc3Url" optional="YES" attributeType="String"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String"/>
+        <relationship name="customerDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CustomerDetails" inverseName="custKyc" inverseEntity="CustomerDetails"/>
+        <relationship name="tempcustomerDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TempcustomerDetails" inverseName="custKyc" inverseEntity="TempcustomerDetails"/>
+    </entity>
+    <entity name="Lead" representedClassName="Lead" syncable="YES">
+        <attribute name="addressMasterID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="askedForProposal" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="assignedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="assignedTime" optional="YES" attributeType="String"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="contactID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="customerClassID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerName" optional="YES" attributeType="String"/>
+        <attribute name="customerOrientationID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerSegmentID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterCategoryID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterProduct" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterUser" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="influencerAddressMasterID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="influencerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isLeadQualified" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isNegotiationDone" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isTrialDone" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="keyCustomer" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedTime" optional="YES" attributeType="String"/>
+        <attribute name="leadSourceID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadstage5" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadstage6" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadStatusID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nextActionID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nextActionTime" optional="YES" attributeType="String"/>
+        <attribute name="orderExpectedDate" optional="YES" attributeType="String"/>
+        <attribute name="originalAssignee" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="originalNextActionID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="originalNextActionTime" optional="YES" attributeType="String"/>
+        <attribute name="proposalSubmitted" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="reAssigned" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="remarks" optional="YES" attributeType="String"/>
+        <attribute name="reminder" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="reminderTime" optional="YES" attributeType="String"/>
+        <attribute name="response" optional="YES" attributeType="String"/>
+        <attribute name="secondInfluencerAddressMasterID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="secondInfluencerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="seriesPostfix" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="seriesPrefix" optional="YES" attributeType="String"/>
+        <attribute name="sortType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="leadCheckInOutList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="LeadCheckInOutList" inverseName="leadList" inverseEntity="LeadCheckInOutList"/>
+        <relationship name="leadStatusList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="LeadStatusList" inverseName="leadList" inverseEntity="LeadStatusList"/>
+        <relationship name="productList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ProductList" inverseName="leadList" inverseEntity="ProductList"/>
+    </entity>
+    <entity name="LeadCheckInOutList" representedClassName="LeadCheckInOutList" syncable="YES">
+        <attribute name="addressMasterID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedTo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkInCheckOutStatusID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkInFrom" optional="YES" attributeType="String"/>
+        <attribute name="checkInTime" optional="YES" attributeType="String"/>
+        <attribute name="checkOutTime" optional="YES" attributeType="String"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="customerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="kM" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lastCheckOutKM" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lattitude" optional="YES" attributeType="String"/>
+        <attribute name="leadDate" optional="YES" attributeType="String"/>
+        <attribute name="leadID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadManualCheckIn" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadManualCheckOut" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <attribute name="manualCheckInStatusID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="manualCheckOutStatusID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="statusID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="leadList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Lead" inverseName="leadCheckInOutList" inverseEntity="Lead"/>
+    </entity>
+    <entity name="LeadSource" representedClassName="LeadSource" syncable="YES">
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadSourceIndex" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadSourceValue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="LeadStatusList" representedClassName="LeadStatusList" syncable="YES">
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="customerOrientationID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imageLattitude" optional="YES" attributeType="String"/>
+        <attribute name="imageLongitude" optional="YES" attributeType="String"/>
+        <attribute name="imagePath" optional="YES" attributeType="String"/>
+        <attribute name="imagePath2" optional="YES" attributeType="String"/>
+        <attribute name="imagePath3" optional="YES" attributeType="String"/>
+        <attribute name="imagePath4" optional="YES" attributeType="String"/>
+        <attribute name="imagePath5" optional="YES" attributeType="String"/>
+        <attribute name="imageTimeStamp" optional="YES" attributeType="String"/>
+        <attribute name="interactionTime" optional="YES" attributeType="String"/>
+        <attribute name="interactionTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="interactionWith" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isLeadQualified" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isNegotiationDone" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isTrialDone" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadAttachementPath" optional="YES" attributeType="String"/>
+        <attribute name="leadForceCheckOut" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadstage5" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadstage6" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nextActionID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nextActionTime" optional="YES" attributeType="String"/>
+        <attribute name="orderExpectedDate" optional="YES" attributeType="String"/>
+        <attribute name="orderLostReasonID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="orderLostTo" optional="YES" attributeType="String"/>
+        <attribute name="outcomeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preCustomerOrientationID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preInteractionWith" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preIsLeadQualified" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preIsNegotiationDone" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preIsTrialDone" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preLeadStage5" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preLeadStage6" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preLeadTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preNextActionID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preNextActionTime" optional="YES" attributeType="String"/>
+        <attribute name="preOrderExpectedDate" optional="YES" attributeType="String"/>
+        <attribute name="preProposalSubmitted" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preRemarks" optional="YES" attributeType="String"/>
+        <attribute name="preReminder" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proposalSubmitted" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="remarks" optional="YES" attributeType="String"/>
+        <attribute name="reminder" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="reminderTime" optional="YES" attributeType="String"/>
+        <attribute name="statusFrom" optional="YES" attributeType="String"/>
+        <relationship name="leadList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Lead" inverseName="leadStatusList" inverseEntity="Lead"/>
+        <relationship name="leadPreviousProductsList" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ProductList"/>
+        <relationship name="productList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ProductList" inverseName="leadPreviousProductsList" inverseEntity="ProductList"/>
+    </entity>
+    <entity name="Leave" representedClassName="Leave" syncable="YES">
+        <attribute name="appliedOn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="approvedBy" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedOn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="entity_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leaveDay" optional="YES" attributeType="String"/>
+        <attribute name="modifiedBy" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="reason" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="transactionID" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="leaveuser" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="LeaveUser" inverseName="leave" inverseEntity="LeaveUser"/>
+    </entity>
+    <entity name="LeaveBalance" representedClassName="LeaveBalance" syncable="YES">
+        <attribute name="companyID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leaveBalance" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leavesTaken" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leaveType" optional="YES" attributeType="String"/>
+        <attribute name="modifiedBy" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalLeaves" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="LeaveStatus" representedClassName="LeaveStatus" syncable="YES">
+        <attribute name="appliedOn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="approvedBy" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedOn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="entity_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leaveDay" optional="YES" attributeType="String"/>
+        <attribute name="medicalCerti" optional="YES" attributeType="String"/>
+        <attribute name="modifiedBy" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="reason" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="transactionID" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="leavestatususer" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="LeaveStatusUser" inverseName="leavestatus" inverseEntity="LeaveStatusUser"/>
+    </entity>
+    <entity name="LeaveStatusUser" representedClassName="LeaveStatusUser" syncable="YES">
+        <attribute name="companyId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="deviceid" optional="YES" attributeType="String"/>
+        <attribute name="emailID" optional="YES" attributeType="String"/>
+        <attribute name="entity_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="picture" optional="YES" attributeType="String"/>
+        <attribute name="roleId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="leavestatus" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LeaveStatus" inverseName="leavestatususer" inverseEntity="LeaveStatus"/>
+    </entity>
+    <entity name="LeaveUser" representedClassName="LeaveUser" syncable="YES">
+        <attribute name="companyId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="deviceid" optional="YES" attributeType="String"/>
+        <attribute name="emailID" optional="YES" attributeType="String"/>
+        <attribute name="entity_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="picture" optional="YES" attributeType="String"/>
+        <attribute name="roleId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="leave" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Leave" inverseName="leaveuser" inverseEntity="Leave"/>
+    </entity>
+    <entity name="Manager" representedClassName="Manager" syncable="YES">
+        <attribute name="emailVerified" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="entity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="invalidLoginAttempt" optional="YES" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="lastmodifiedby" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="picture" optional="YES" attributeType="String"/>
+        <relationship name="companyuser" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="CompanyUsers" inverseName="manager" inverseEntity="CompanyUsers"/>
+    </entity>
+    <entity name="MenuTabs" representedClassName="MenuTabs" syncable="YES">
+        <attribute name="companyID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isVisible" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="menuID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="menuLocalText" optional="YES" attributeType="String"/>
+        <attribute name="menuValue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="MetadataVATCodes" representedClassName="MetadataVATCodes" syncable="YES">
+        <attribute name="iD" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="inclusiveExclusive" optional="YES" attributeType="String"/>
+        <attribute name="tAXName" optional="YES" attributeType="String"/>
+        <attribute name="tAXPercentage" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vATCode" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Outcomes" representedClassName="Outcomes" syncable="YES">
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerSegment" optional="YES" attributeType="String"/>
+        <attribute name="customerType" optional="YES" attributeType="String"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isShelf" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="leadAttachementPath" optional="YES" attributeType="String"/>
+        <attribute name="leadOutcomeClose" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="leadOutcomeCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadOutcomeIndexID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadOutcomeValue" optional="YES" attributeType="String"/>
+        <attribute name="month" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="outcomeType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="PermanentAddresss" representedClassName="PermanentAddresss" syncable="YES">
+        <attribute name="addressLine1" optional="YES" attributeType="String"/>
+        <attribute name="addressLine2" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="entity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="lastmodified" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastmodifiedby" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="pincode" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <attribute name="verified" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <relationship name="companyuser" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="CompanyUsers" inverseName="permanent_address" inverseEntity="CompanyUsers"/>
+    </entity>
+    <entity name="PlannVisit" representedClassName="PlannVisit" syncable="YES">
+        <attribute name="addressMasterID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedTo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="assignedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="assignedTime" optional="YES" attributeType="String"/>
+        <attribute name="beatPlanID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkInTime" optional="YES" attributeType="String"/>
+        <attribute name="checkOutTime" optional="YES" attributeType="String"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="conclusion" optional="YES" attributeType="String"/>
+        <attribute name="contactID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="contactMobileNo" optional="YES" attributeType="String"/>
+        <attribute name="contactName" optional="YES" attributeType="String"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdByName" optional="YES" attributeType="String"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="customerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerName" optional="YES" attributeType="String"/>
+        <attribute name="filterCategoryID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterProduct" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterUser" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isFeedBackAvailable" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="isManual" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isPictureAvailable" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isStockAvailable" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="isTertiaryAvailable" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedTime" optional="YES" attributeType="String"/>
+        <attribute name="nextActionID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nextActionTime" optional="YES" attributeType="String"/>
+        <attribute name="originalAssignee" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="originalNextActionID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="originalNextActionTime" optional="YES" attributeType="String"/>
+        <attribute name="reAssigned" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ressigneeName" optional="YES" attributeType="String"/>
+        <attribute name="seriesPostfix" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="seriesPrefix" optional="YES" attributeType="String"/>
+        <attribute name="sortType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tempCustomerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitStatusID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="checkInOutData" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="VisitCheckInOutList" inverseName="plannVisit" inverseEntity="VisitCheckInOutList"/>
+        <relationship name="productList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ProductList" inverseName="plannVisit" inverseEntity="ProductList"/>
+        <relationship name="visitCollection" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VisitCollection" inverseName="plannVisit" inverseEntity="VisitCollection"/>
+        <relationship name="visitCounterShare" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="VisitCounterShare" inverseName="plannVisit" inverseEntity="VisitCounterShare"/>
+        <relationship name="visitStatusList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="VisitStatus" inverseName="plannVisit" inverseEntity="VisitStatus"/>
+    </entity>
+    <entity name="POrder" representedClassName="POrder" syncable="YES">
+        <attribute name="approvedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedTo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="assignedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="assignedTo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="assignedToByName" optional="YES" attributeType="String"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="companyTypeID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdByName" optional="YES" attributeType="String"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="customerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="deliveryDays" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="filterCategoryID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterProduct" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterUser" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="grossAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="grossTax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedTime" optional="YES" attributeType="String"/>
+        <attribute name="leadID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadSeriesPostfix" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadSeriesPrefix" optional="YES" attributeType="String"/>
+        <attribute name="localTaxID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="localTaxSurcharge" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="localTaxValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="maxdata" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="netAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="paymentMadeAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="productDispatchedStatusID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productReceivedStatusID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proposalID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proposalSeriesPostfix" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="salesOrderID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="seriesPostfix" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="seriesPrefix" optional="YES" attributeType="String"/>
+        <attribute name="sortType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="soSeriesPostfix" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="soSeriesPrefix" optional="YES" attributeType="String"/>
+        <attribute name="statusID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="surcharges" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="tnc" optional="YES" attributeType="String"/>
+        <attribute name="totalQuantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="transactionID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vendorID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vendorName" optional="YES" attributeType="String"/>
+        <relationship name="soProductList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="SOrderProducts" inverseName="pOrder" inverseEntity="SOrderProducts"/>
+    </entity>
+    <entity name="ProdCategory" representedClassName="ProdCategory" syncable="YES">
+        <attribute name="categoryType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cGSTSurcharges" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cGSTTax" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cST" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="cSTSurcharge" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="exciseDuty" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="exciseSurcharge" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gSTEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iGSTSurcharges" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iGSTTax" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="maxdata" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="serviceSurcharge" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="serviceTax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sGSTSurcharges" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sGSTTax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="superCatID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vAT" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vATAdditionalTax" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vATCode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vATSurcharges" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="productSubCategory" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ProductSubCat" inverseName="productCategory" inverseEntity="ProductSubCat"/>
+    </entity>
+    <entity name="Product" representedClassName="Product" syncable="YES">
+        <attribute name="barCode" optional="YES" attributeType="String"/>
+        <attribute name="closingInventory" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="companyTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="deliveryPeriod" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="discountA" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="discountB" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="discountC" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="maxdiscount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="openingInventory" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="productCatId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productDriveFlag" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String"/>
+        <attribute name="productPath" optional="YES" attributeType="String"/>
+        <attribute name="productPath2" optional="YES" attributeType="String"/>
+        <attribute name="productSubCatId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="purchaseDiscount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="salesDiscount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="specifications" optional="YES" attributeType="String"/>
+        <attribute name="specifications2" optional="YES" attributeType="String"/>
+        <attribute name="specifications3" optional="YES" attributeType="String"/>
+        <attribute name="specifications4" optional="YES" attributeType="String"/>
+        <attribute name="unitOfMeasure" optional="YES" attributeType="String"/>
+        <attribute name="user_ID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ProductList" representedClassName="ProductList" syncable="YES">
+        <attribute name="budget" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="categoryID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="categoryName" optional="YES" attributeType="String"/>
+        <attribute name="categoryType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isnewproduct" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="leadID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadStatusID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="subcategoryID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="subCategoryName" optional="YES" attributeType="String"/>
+        <attribute name="visitID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="leadList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Lead" inverseName="productList" inverseEntity="Lead"/>
+        <relationship name="leadPreviousProductsList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LeadStatusList" inverseName="productList" inverseEntity="LeadStatusList"/>
+        <relationship name="leadStatusList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LeadStatusList"/>
+        <relationship name="plannVisit" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PlannVisit" inverseName="productList" inverseEntity="PlannVisit"/>
+    </entity>
+    <entity name="ProductSubCat" representedClassName="ProductSubCat" syncable="YES">
+        <attribute name="categoryType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cGSTSurcharges" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cGSTTax" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cST" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cSTSurcharge" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="exciseDuty" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="exciseSurcharge" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="gSTEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iGSTSurcharges" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iGSTTax" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="maxdata" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="serviceSurcharge" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="serviceTax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sGSTSurcharges" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sGSTTax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="superCatID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vAT" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vATAdditionalTax" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vATCode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vATSurcharges" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="productCategory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProdCategory" inverseName="productSubCategory" inverseEntity="ProdCategory"/>
+    </entity>
+    <entity name="Proposl" representedClassName="Proposl" syncable="YES">
+        <attribute name="approvedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedTo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="assignedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="assignedTo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="customerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerName" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="filterCategoryID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterProduct" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterUser" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="grossAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gSTEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedTime" optional="YES" attributeType="String"/>
+        <attribute name="leadID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadSeriesPostfix" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadSeriesPrefix" optional="YES" attributeType="String"/>
+        <attribute name="localTaxID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="localTaxSurcharge" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="localTaxValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="netAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="seriesPostfix" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="seriesPrefix" optional="YES" attributeType="String"/>
+        <attribute name="sortType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="statusID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="productList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ProposlProduct" inverseName="proposal" inverseEntity="ProposlProduct"/>
+    </entity>
+    <entity name="ProposlProduct" representedClassName="ProposlProduct" syncable="YES">
+        <attribute name="categoryType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cGSTSurcharges" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cGSTTax" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cST" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cSTSurcharge" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="discount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="exciseDuty" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="exciseSurcharge" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="gSTEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="iGSTSurcharges" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iGSTTax" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="productAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="productID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proposalID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="serviceTax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="serviceTaxSurcharge" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sGSTSurcharges" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sGSTTax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vAT" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vATAdditionalTax" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vATSurcharges" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="proposal" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Proposl" inverseName="productList" inverseEntity="Proposl"/>
+    </entity>
+    <entity name="PurchaseProducts" representedClassName="PurchaseProducts" syncable="YES">
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="deliveryPeriod" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="picture" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="productCatID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productSubCatID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="purchaseDiscount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="specifications" optional="YES" attributeType="String"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vendorID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="SOrder" representedClassName="SOrder" syncable="YES">
+        <attribute name="approvedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedTo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="assignedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="assignedTo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="customerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerName" optional="YES" attributeType="String"/>
+        <attribute name="dealerCity" optional="YES" attributeType="String"/>
+        <attribute name="dealerCode" optional="YES" attributeType="String"/>
+        <attribute name="deliveryDays" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="editStatusID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterCategoryID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterProduct" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="filterUser" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="finalSalesAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="flatPromotionPercentage" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="fulfilledByID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="grossAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isExceedsMaxDiscount" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isPromotionApplied" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedTime" optional="YES" attributeType="String"/>
+        <attribute name="leadID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadSeriesPostfix" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leadSeriesPrefix" optional="YES" attributeType="String"/>
+        <attribute name="localTaxID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="localTaxSurcharge" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="localTaxValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="netAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="productDispatchedStatusID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="promotionAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="promotionID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="promotionName" optional="YES" attributeType="String"/>
+        <attribute name="proposalID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proposalSeriesPostfix" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proposalSeriesPrefix" optional="YES" attributeType="String"/>
+        <attribute name="seriesPostfix" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="seriesPrefix" optional="YES" attributeType="String"/>
+        <attribute name="sOMadeBy" optional="YES" attributeType="String"/>
+        <attribute name="sOMadeFrom" optional="YES" attributeType="String"/>
+        <attribute name="sortType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="statusID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tnc" optional="YES" attributeType="String"/>
+        <attribute name="totalDiscount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="totalGrossAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="totalNetAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="totalPromotionAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="totalQuantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalTaxAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="visitID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="warranty" optional="YES" attributeType="String"/>
+        <relationship name="soProductList" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="SOrderProducts" inverseName="sOrder" inverseEntity="SOrderProducts"/>
+    </entity>
+    <entity name="SOrderProducts" representedClassName="SOrderProducts" syncable="YES">
+        <attribute name="categoryType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cGSTSurcharges" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cGSTTax" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cST" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cSTSurcharge" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerClass" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="discount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="discountA" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="discountB" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="discountC" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="discountType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dispatchQuantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="exciseDuty" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="exciseSurcharge" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="focQuantity" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gSTEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="iGSTSurcharges" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iGSTTax" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="inclusiveExclusive" optional="YES" attributeType="String"/>
+        <attribute name="isPromotional" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="maxdiscount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="productAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="productID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="purhcaseOrderID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="receivedQuantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="salesOrderID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="serviceSurcharge" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="serviceTax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="serviceTaxSurcharge" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sGSTSurcharges" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sGSTTax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vAT" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vATAdditionalTax" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vATFrom" optional="YES" attributeType="String"/>
+        <attribute name="vATPercentage" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vATSurcharges" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="pOrder" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="POrder" inverseName="soProductList" inverseEntity="POrder"/>
+        <relationship name="sOrder" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SOrder" inverseName="soProductList" inverseEntity="SOrder"/>
+    </entity>
+    <entity name="StepVisitList" representedClassName="StepVisitList" syncable="YES">
+        <attribute name="companyID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerSegment" optional="YES" attributeType="String"/>
+        <attribute name="customerType" optional="YES" attributeType="String"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="mandatoryOrOptional" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="menuID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="menuIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="menuLocalText" optional="YES" attributeType="String"/>
+        <attribute name="menuOrder" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="TaggedToIDList" representedClassName="TaggedToIDList" syncable="YES">
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taggedUserID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taggedUserRoleID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taggedUsersName" optional="YES" attributeType="String"/>
+        <relationship name="customerDetails" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="CustomerDetails" inverseName="taggedToIDList" inverseEntity="CustomerDetails"/>
+        <relationship name="tempCustomerDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TempcustomerDetails" inverseName="taggedToIDList" inverseEntity="TempcustomerDetails"/>
+    </entity>
+    <entity name="TempcustomerDetails" representedClassName="TempcustomerDetails" syncable="YES">
+        <attribute name="anniversaryDate" optional="YES" attributeType="String"/>
+        <attribute name="birthDate" optional="YES" attributeType="String"/>
+        <attribute name="cCode" optional="YES" attributeType="String"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="companyTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="contactLastName" optional="YES" attributeType="String"/>
+        <attribute name="contactName" optional="YES" attributeType="String"/>
+        <attribute name="contactNo" optional="YES" attributeType="String"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="customerClass" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerGSTNo" optional="YES" attributeType="String"/>
+        <attribute name="customerImage" optional="YES" attributeType="String"/>
+        <attribute name="customerImage2" optional="YES" attributeType="String"/>
+        <attribute name="customerImage3" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="distributorID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="distributorName" optional="YES" attributeType="String"/>
+        <attribute name="emailID" optional="YES" attributeType="String"/>
+        <attribute name="emailTo" optional="YES" attributeType="String"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isAdminSuperAdmin" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="keyCustomer" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="keyCustomerVendor" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="landlineNo" optional="YES" attributeType="String"/>
+        <attribute name="lastModified" optional="YES" attributeType="String"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="logo" optional="YES" attributeType="String"/>
+        <attribute name="mobileNo" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="ownerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="priviledgeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="segmentID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="statusID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taggedRoleID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taggedStatus" optional="YES" attributeType="String"/>
+        <attribute name="taggedTo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taggedUserName" optional="YES" attributeType="String"/>
+        <attribute name="taxType" optional="YES" attributeType="String"/>
+        <attribute name="territoryCode" optional="YES" attributeType="String"/>
+        <attribute name="territoryID" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="townID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="townName" optional="YES" attributeType="String"/>
+        <attribute name="transactional" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="vATCode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitFrequency" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitingCard" optional="YES" attributeType="String"/>
+        <relationship name="addressList" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="AddressList" inverseName="tempcustomerDetails" inverseEntity="AddressList"/>
+        <relationship name="custKyc" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="KYCDetailOFCustomer" inverseName="tempcustomerDetails" inverseEntity="KYCDetailOFCustomer"/>
+        <relationship name="taggedToIDList" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="TaggedToIDList" inverseName="tempCustomerDetails" inverseEntity="TaggedToIDList"/>
+    </entity>
+    <entity name="Territory" representedClassName="Territory" syncable="YES">
+        <attribute name="companyId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="modifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="modifiedTime" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="territoryCode" optional="YES" attributeType="String"/>
+        <attribute name="territoryName" optional="YES" attributeType="String"/>
+        <attribute name="territoryUserId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="territoryUserMobile" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="territoryUserName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UsersLocation" representedClassName="UsersLocation" syncable="YES">
+        <attribute name="company_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="entity_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="firstname" optional="YES" attributeType="String"/>
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="isGPSOn" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="isMockLocation" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+        <attribute name="lastname" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="user" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Vendor" representedClassName="Vendor" syncable="YES">
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="companyTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerClass" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerCode" optional="YES" attributeType="String"/>
+        <attribute name="customerGSTNo" optional="YES" attributeType="String"/>
+        <attribute name="customerImage" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="emailID" optional="YES" attributeType="String"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isAdminSuperAdmin" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="keyCustomer" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="landlineNo" optional="YES" attributeType="String"/>
+        <attribute name="lastModified" optional="YES" attributeType="String"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="logo" optional="YES" attributeType="String"/>
+        <attribute name="mobileNo" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="ownerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="priviledgeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="segmentID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taggedRole" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taggedStatus" optional="YES" attributeType="String"/>
+        <attribute name="taggedToID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taggedToName" optional="YES" attributeType="String"/>
+        <attribute name="taxType" optional="YES" attributeType="String"/>
+        <attribute name="transactional" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="visitingCard" optional="YES" attributeType="String"/>
+        <relationship name="addressList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="AddressList" inverseName="vendorDetails" inverseEntity="AddressList"/>
+    </entity>
+    <entity name="VisitCheckInOutList" representedClassName="VisitCheckInOutList" syncable="YES">
+        <attribute name="addressMasterID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approvedTo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkInCheckOutStatusID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkInTime" optional="YES" attributeType="String"/>
+        <attribute name="checkOutTime" optional="YES" attributeType="String"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdByName" optional="YES" attributeType="String"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="customerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="kM" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lastCheckOutKM" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lattitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <attribute name="manualCheckInStatusID" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="manualCheckOutStatusID" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="statusID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitDate" optional="YES" attributeType="String"/>
+        <attribute name="visitID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitManualCheckIn" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitManualCheckOut" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="plannVisit" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PlannVisit" inverseName="checkInOutData" inverseEntity="PlannVisit"/>
+    </entity>
+    <entity name="VisitCollection" representedClassName="VisitCollection" syncable="YES">
+        <attribute name="balanceValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="collectionValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="followUpDate" optional="YES" attributeType="String"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="modeOfPayment" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="referenceNo" optional="YES" attributeType="String"/>
+        <attribute name="visitID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="plannVisit" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="PlannVisit" inverseName="visitCollection" inverseEntity="PlannVisit"/>
+    </entity>
+    <entity name="VisitCounterShare" representedClassName="VisitCounterShare" syncable="YES">
+        <attribute name="companySegmentShareValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="companyShareValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="competitorName" optional="YES" attributeType="String"/>
+        <attribute name="competitorName2" optional="YES" attributeType="String"/>
+        <attribute name="competitorShare" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="competitorShare2" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="counterShareSubCategoryList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="VisitCounterShareSubCategoryList" inverseName="categoryList" inverseEntity="VisitCounterShareSubCategoryList"/>
+        <relationship name="plannVisit" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="PlannVisit" inverseName="visitCounterShare" inverseEntity="PlannVisit"/>
+    </entity>
+    <entity name="VisitCounterShareSubCategoryList" representedClassName="VisitCounterShareSubCategoryList" syncable="YES">
+        <attribute name="companyShareValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="counterShareID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="subcategoryID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="categoryList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VisitCounterShare" inverseName="counterShareSubCategoryList" inverseEntity="VisitCounterShare"/>
+    </entity>
+    <entity name="VisitOutcomes" representedClassName="VisitOutcomes" syncable="YES">
+        <attribute name="companyID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerSegment" optional="YES" attributeType="String"/>
+        <attribute name="customerType" optional="YES" attributeType="String"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitClose" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="visitOutcomeCloseByOtp" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="visitOutcomeIndexID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitOutcomeValue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="VisitStatus" representedClassName="VisitStatus" syncable="YES">
+        <attribute name="conclusion" optional="YES" attributeType="String"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdByName" optional="YES" attributeType="String"/>
+        <attribute name="createdTime" optional="YES" attributeType="String"/>
+        <attribute name="expectedDate" optional="YES" attributeType="String"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="interactionTime" optional="YES" attributeType="String"/>
+        <attribute name="interactionTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="interactionWith" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="interactionWithName" optional="YES" attributeType="String"/>
+        <attribute name="nextActionID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nextActionTime" optional="YES" attributeType="String"/>
+        <attribute name="orderValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="updatedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitOutcome2ID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitOutcome3ID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitOutcome4ID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitOutcome5ID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitOutcomeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="visitTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="plannVisit" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PlannVisit" inverseName="visitStatusList" inverseEntity="PlannVisit"/>
+    </entity>
+</model>
