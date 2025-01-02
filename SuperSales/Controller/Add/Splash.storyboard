@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LaunchViewController-->
+        <scene sceneID="Ulk-Aw-jH5">
+            <objects>
+                <viewController storyboardIdentifier="splashviewcontroller1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e3f-zl-f3i" userLabel="LaunchViewController" customClass="LaunchViewController" customModule="SuperSales" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lb1-bm-Uxu"/>
+                        <viewControllerLayoutGuide type="bottom" id="hPY-dd-HeK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6B0-cI-2SJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SuperSales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxU-i5-Ygq">
+                                <rect key="frame" x="113.5" y="94" width="187" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="T2R-oc-WFV">
+                                <rect key="frame" x="135" y="186" width="144" height="144"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empowers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hY9-nP-Jcj">
+                                <rect key="frame" x="121.5" y="370" width="171.5" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="lTS-Zj-hkL">
+                                <rect key="frame" x="135" y="452" width="144" height="144"/>
+                                <color key="backgroundColor" red="0.4039215686" green="0.2274509804" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XQN-TU-Aof"/>
+                        <color key="backgroundColor" red="0.1647058824" green="0.4431372549" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hY9-nP-Jcj" firstAttribute="centerX" secondItem="6B0-cI-2SJ" secondAttribute="centerX" id="1qq-Vm-r0b"/>
+                            <constraint firstItem="lTS-Zj-hkL" firstAttribute="centerX" secondItem="6B0-cI-2SJ" secondAttribute="centerX" id="8gX-yl-Rv3"/>
+                            <constraint firstItem="lTS-Zj-hkL" firstAttribute="top" secondItem="hY9-nP-Jcj" secondAttribute="bottom" constant="40" id="Dix-9z-FG1"/>
+                            <constraint firstItem="hY9-nP-Jcj" firstAttribute="top" secondItem="T2R-oc-WFV" secondAttribute="bottom" constant="40" id="HR5-uT-A16"/>
+                            <constraint firstItem="T2R-oc-WFV" firstAttribute="centerX" secondItem="6B0-cI-2SJ" secondAttribute="centerX" id="Hxi-NY-AjL"/>
+                            <constraint firstItem="T2R-oc-WFV" firstAttribute="top" secondItem="UxU-i5-Ygq" secondAttribute="bottom" constant="50" id="eam-QP-iss"/>
+                            <constraint firstItem="UxU-i5-Ygq" firstAttribute="centerX" secondItem="6B0-cI-2SJ" secondAttribute="centerX" id="fk7-mr-g9x"/>
+                            <constraint firstItem="UxU-i5-Ygq" firstAttribute="top" secondItem="lb1-bm-Uxu" secondAttribute="bottom" constant="50" id="kR6-Q0-0DA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgCompsnyLogo" destination="lTS-Zj-hkL" id="yeB-PG-87b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IrJ-1m-2RS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="8nT-l6-GpD">
+            <objects>
+                <viewController storyboardIdentifier="splashviewcontroller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bzy-lY-z18" customClass="SplashViewController" customModule="SuperSales" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QGu-IU-Gcr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BCn-XJ-xdK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSa-gS-DiF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="424"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="App_Logo" width="144" height="144"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
