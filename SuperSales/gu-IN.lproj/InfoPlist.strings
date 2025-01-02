@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  SuperSales
+
+  Created by Apple on 22/01/19.
+  Copyright © 2019 Big Bang Innovations. All rights reserved.
+*/
+"CFBundleDisplayName" = "સુપરસેલ્સ";
+"UILaunchStoryboardName" = "LaunchScreen_gu";

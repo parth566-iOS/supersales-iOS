@@ -1,0 +1,271 @@
+/* 
+  Localizable.strings
+  SuperSales
+
+  Created by Apple on 03/11/18.
+  Copyright © 2018 Big Bang Innovations. All rights reserved.
+*/
+
+/* Login Screen */
+"supersales-title" = "SuperSales";
+
+"forgot-password-text" = "Forgot Password?";
+
+"Please-enter-mobile-number" = "Please enter mobile number";
+
+"Please-enter-valid-mobile-number" = "Please enter valid mobile number";
+
+"Please-enter-password" = "Please enter password";
+
+"Ok" = "Ok";
+
+"Cancel" = "Cancel";
+
+"Settings" = "Settings";
+
+/* Forgot Password Screen */
+"reset-password-title" = "Reset Password";
+
+"Refresh" = "Refresh";
+"internet-failure" = "Please check your internet connection.";
+
+/* Joint Visit */
+"please_select_the_executive" = "Please select the Executive";
+"select_valid_visit_time" = "Select valid visit time";
+"make_sure_your_start_time_is_before_end_time" = "Make sure your Start Time is before End Time.";
+/* Add Visit */
+"please_select_customer" = "Please select customer";
+"please_select_customer_first" = "Please select customer first";
+"you_cant_add_one_product_multiple_time" = "You can't add one product multiple time.";
+"you_are_not_permitted_to_add_customer_please_contact_admin_for_permission" = "You are not permitted to add customer, Please contact Admin for permission";
+"add_visit" = "Add Visit";
+"edit_visit" = "Edit Visit";
+
+/* Add Manual Visit */
+"you_cant_add_future_check_in_time" = "You can't add future Check-In Time";
+"you_cant_add_future_check_uut_time" = "You can't add future Check-Out time";
+"make_sure_your_check_in_time_is_before_check_out_time" = "Make sure your Check-In Time is before Check-Out Time.";
+
+/* Add Direct Visit */
+"latitude_or_longitude_is_zero_please_try_again" = "Latitude or Longitude is zero, please try again";
+"location_services_disabled" = "Location Services Disabled";
+"please_enable_location_services_in_settings" = "Please enable Location Services in Settings";
+"customer_is_not_mapped_so_you_cant_Check_IN" = "Customer is not mapped, so you can't Check-IN";
+"you_are_not_at_work_location_please_do_manual_Check_IN" = "You are not at work location, please do manual Check-IN";
+"you_are_not_at_work_location_please_refresh_location" = "You are not at work location, please refresh location";
+"VIEW_ON_MAP" = "VIEW ON MAP";
+"MANUAL_CHECK_IN" = "MANUAL CHECK-IN";
+"yes" = "Yes";
+"no" = "No";
+"your_current_location_is_different_from_customer_location_do_you_want_to_update_customer_location_for_check_in" = "Your current location is different from customer location.\n\nDo you want to update customer location for check-in?";
+"your_current_location_is_different_from_customer_location_do_you_want_to_sent_approval_for_check_in" = "Your current location is different from customer location.\n\nDo you want to sent approval for check-in?";
+
+/* Add Collection */
+"please_enter_reference_no" = "Please enter reference no";
+"add_collection" = "Add Collection";
+"collection_value" = "Collection Value";
+"balance_value" = "Balance Value";
+
+/* Add Counter Share */
+"add_counter_share" = "Add Counter Share";
+"please_enter_competitor_name2" = "please enter competitor name 2";
+"please_enter_competitor_share_value2" = "please enter competitor share value 2";
+"please_enter_competitor_name" = "please enter competitor name";
+"please_enter_competitor_share_value" = "please enter competitor share value";
+"please_enter_business_share_value" = "Please enter business share value";
+"please_enter_lighting_share_value" = "Please enter segment share value";
+"please_enter_minimal_lighting_share_value" = "Please enter segment value greater than 0";
+"business_share_value" = "Business Share Value";
+"lighting_share_value" = "Segment Share Value";
+"philips_sales_value" = "Philips Sales Value";
+"top1_competitor_name" = "Select Top-1 Competitor";
+"top2_competitor_name" = "Select Top-2 Competitor";
+"competitor_share_value1" = "Competitor share value 1";
+"competitor_share_value2" = "Competitor share value 2";
+
+/* Customer Profile */
+"customer_profile" = "Customer Profile";
+"lighting_share_value" = "Segment share value";
+"philips_sales_value" = "Philips sales value";
+"is_selling_lighting_products" = "Is Selling Segment Products";//"Is Selling Lighting Products?";
+"is_selling_philips" = "Is Selling?";//"Is Selling Philips?";
+"is_interested_in_selling_light_products" = "Is Interested in Selling Segment Products?";//"Is Interested in Selling Light Products?";
+"is_interested_in_selling_philips" = "Is Interested in Selling ?";//"Is Interested in Selling Philips?";"is_interested_in_selling_philips" = "Is Interested in Selling ?";
+"submit" = "Submit";
+"create_new_customer" = "CREATE NEW CUSTOMER";
+"please_enter_philips_sales_value" = "Please enter philips sales value";
+"subcategory_sales_value_total_is_equal_to_philips_sales_value" = "Subcategory sales value total is equal to philips sales value";
+"thank_you" = "Thank You";
+"expected_offtake_value" = "Expected offtake value";
+"selling_in" = "Selling In";
+"interested_in" = "Interested In";
+
+/* Add Cold Call Visit */
+"are_you_sure_you_want_to_delete_this_item" = "Are you sure you want to delete this item?";
+"assigned_to" = "Assigned To:";
+"please_enter_customer_name" = "Please enter customer name";
+"please_enter_customer_contact_number" = "Please enter customer mobile number";
+"contact_name_is_required_to_add_contact" = "Contact Name is required to add Contact";
+"contact_number_is_required_to_add_contact" = "Contact Number is required to add Contact";
+"description" = "Description";
+"add_visit" = "Add Visit";
+"edit_visit" = "Edit Visit";
+"corporate" = "Corporate";
+"end_user" = "End-User";
+"influencer" = "Influencer";
+"retailer" = "Retailer";
+"distributor" = "Distributor";
+
+/* Visit Details */
+"customer_is_pending_so_you_cant_create_sales_order" = "Customer is pending, so you can't create Sales Order";
+"customer_is_not_mapped_so_you_cant_update_visit_report" = "Customer is not mapped, so you can't update visit report";
+"this_visit_is_already_assigned_to" = "This visit is already assigned to";
+"customer_is_not_mapped_so_you_cant_view_customer_history" = "Customer is not mapped, so you can't view customer history";
+"customer_is_pending_so_you_cant_edit_it" = "Customer is pending, so you can't edit it";
+"customer_is_not_mapped_so_you_cant_edit_it" = "Customer is not mapped, so you can't edit it";
+"are_you_sure_you_want_to_close_this_visit" = "Are you sure you want to close this Visit?";
+"customer_is_not_mapped_so_you_cant_reassign_this_visit" = "Customer is not mapped, so you can't reassign this visit";
+"customer_not_mapped_so_you_cant_view_location" = "Customer Not Mapped, So you can't view location";
+"customer_is_not_mapped_so_you_cant_check_OUT" = "Customer is not mapped, so you can't Check-OUT";
+"please_add_picture_in_this_visit_to_do_check_out" = "Please add picture in this visit to do Check-Out";
+"please_submit_visit_report_to_do_Check_Out" = "Please submit visit report to do Check-Out";
+"please_add_collection_in_this_visit_for_check_Out" = "Please add collection in this visit for Check-Out";
+"please_add_counter_share_in_this_visit_for_check_Out" = "Please add counter share in this visit for Check-Out";
+"please_create_sales_order_in_this_visit_for_check_Out" = "Please create sales order in this visit for Check-Out";
+"MANUAL_CHECK_OUT" = "MANUAL CHECK-OUT";
+"refreshing_location" = "Refreshing Location";
+"You_are_ready_to_check_in_or_check_out" = "You are ready to check-in or check-out.";
+"CHECKED_IN" = "CHECKED-IN";
+"CHECK_IN" = "Check-In";
+"CHECK_OUT" = "Check-Out";
+"CHECK_IN_Cap" = "CHECK-IN";
+"CHECK_OUT_Cap" = "CHECK-OUT";
+"please_update_counter_share" = "Please update counter share";
+"visit_no" = "Visit No.";
+
+/* Promotion*/
+"promotion" = "PROMOTION";
+"Promotion_Join" = "JOIN";
+"Promotion_Not_Join" = "NOT JOIN";
+
+/* Notification */
+"notificationList" = "NOTIFICATIONS";
+"notificationListTitle" = "Notifications";
+"notificationApproval" = "APPROVALS";
+
+/* Product Drive */
+
+"Product_Drive" = "Product Drive";
+
+/* Shelf Space */
+"Shelf_Space" = "Shelf Space";
+
+/* Plan Visit Report */
+"select_visit_outcome" = "Select Visit Outcome";
+"please_select_valid_date" = "Please select valid date";
+"customer_placed_order" = "Customer Placed Order";
+"customer_promised_to_place_order" = "Customer Promised to Place Order";
+"selected_outcome_is" = "Selected outcome is";
+"are_you_sure_you_want_to_set_this_outcome" = " Are you sure you want to set this outcome?";
+"you_do_not_select_any_next_action_are_you_sure_you_want_to_close_this_visit" = "You do not select any next action, Are you sure you want to close this Visit?";
+"you_have_not_yet_checked_out_from_the_visit_report_submission" = "You have not yet checked out from the visit. Do you want to check out,close the visit with visit report submission?Note that once you close visit,you can't add order or update any detail to the visit";
+
+"you_have_not_yet_checked_in_from_the_visit_report_submission" = "You have not yet checked in and checked out from the visit. Do you want to close the visit with visit report submission? Note that once you close visit,you can't add order or update any detail to the visit";
+
+"already_checkedout_want_to_close_Visit" = "You are already checked out.Do you want to close the visit with report submission? Note that once you close visit, you can't add order or update any detail to the visit";
+
+"you_have_not_yet_checked_in" = "If you have any more information or order to be updated on this visit, you can Checkout and close the visit.do you want to close the visit? Press No if any update on this visit is pending";
+"You_are_not_at_visit_location" = "You are not at visit location. Do you want to close the visit with visit report submission?";
+"visit_closed_successfully" = "Visit closed successfully";
+
+/* Update Stock */
+"update_stock" = "Update Stock";
+"please_select_the_product" = "Please select the Product";
+"please_add_product_quantity_greater_than_0_to" = "Please add product quantity greater than 0 to";
+
+/* Visit View Stock */
+"view_stock" = "View Stock";
+"no_data_found" = "No Data Found!";
+"enter_valid_start_date" = "Enter valid start date";
+"enter_valid_end_date" = "Enter valid end date";
+"add_tertiary" = "Add Tertiary";
+"view_tertiary" = "View Tertiary";
+
+/* Visit History */
+"VISIT_HISTORY" = "VISIT HISTORY";
+"planned" = "Planned";
+"cold_call" = "Cold Call";
+"select_produc_category" = "Select Product Category";
+"select_product" = "Select Product";
+"select_customer" = "Select Customer";
+"by_customer" = "By Customer";
+"asc_visit_no" = "ASC Visit No";
+"desc_visit_no" = "DESC Visit No";
+"by_products" = "By Products";
+"by_user" = "By Sales Person";
+"by_product_category" = "By Product Category";
+"by_product_sub_category" = "By Product Sub-Category";
+"by_created_by" = "By Created Date";
+"all" = "All";
+"customer_not_mapped" = "Customer Not Mapped";
+"next_action" = "Next Action";
+"not_checked_IN_yet" = "Not Checked-IN Yet";
+"in" = "IN";
+"out" = "OUT";
+"done" = "Done";
+"google_map" = "Google Map";
+"fetching_current_location" = "Fetching current location";
+"are_you_sure_you_want_to_set_your_current_location_as_customer_location" = "Are you sure, you want to set your current location as Customer location?";
+"customer_location" = "Customer Location";
+"attendance" = "Attendance";
+"your_position_on_map" = "Your Position on map";
+"current_position_update" = "Current Position update";
+"feedback" = "Feedback";
+"SAVE_NEXT" = "SAVE & NEXT";
+"question" = "Question";
+"feedback_submitted_successfully" = "Feedback submitted successfully";
+"Your_feedback" = "Your Feedback";
+"close" = "CLOSE";
+"VIEW_NEXT" = "View Next";
+"updatestock" = "Update Stock";
+"your_feedback" = "Your Feedback";
+"textual_feedback" = "Textual Feedback";
+"add_picture" = "Add Picture";
+"view_pictures" = "View Pictures";
+"latitude" = "Latitude";
+"longitude" = "Longitude";
+
+/* Visit */
+"visit" = "VISIT";
+"by_next_action_date" = "By Next Action Date";
+"by_segment" = "By Segment";
+"by_order_created" = "By Order Created";
+"by_class" = "By Class";
+"by_city" = "By City";
+"by_pincode" = "By Pincode";
+"by_terriotry" = "By Territory";
+"by_beatroute" = "By Beatroute";
+
+"Sales-Report-small" = "Reports";//"Sales Report";
+"Sales-Plan-small" = "Sales Plan";
+"Address" = "Address";
+"back" = "back_button"; // Back Button
+"no_contact" = "No Contact";
+
+
+
+/*Sales Order */
+"share" = "Share";
+"dispatch_order_item" = "Dispatch Order Item";
+"product" = "Product";
+"products" = "Products";
+"history" = "History";
+"select_category" = "Select Category";
+"select_sub_category" = "Select Sub-Category";
+"sales_orders" = "SALES ORDERS";
+"add_sales_order" = "Add Sales Order";
+"edit_sales_order" = "Edit Sales Order";
+"customer_near_me" = "Customer Near Me";
+"add_direct_visit_check_in" = "Unplanned";//"Add Direct Visit Check-IN";
+
+"View Company Stock" = "View Company Stock";

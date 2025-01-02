@@ -1,0 +1,444 @@
+
+/* Class = "UITextField"; text = "Set Date(DD-MM-yyyy)"; ObjectID = "122-7d-hot"; */
+"122-7d-hot.text" = "સેટ ડેટ(DD-MM-yyyy)";
+
+/* Class = "UILabel"; text = "NEXT ACTION DETAILS"; ObjectID = "1Hb-k8-WFJ"; */
+"1Hb-k8-WFJ.text" = "નેક્સટ એકશન ડિટેઈલ્સ";
+
+/* Class = "UITextField"; placeholder = "Set Date(DD-MM-yyyy)"; ObjectID = "1ME-Ks-cpm"; */
+"1ME-Ks-cpm.placeholder" = "સેટ ડેટ(DD-MM-yyyy)";
+
+/* Class = "UITextField"; placeholder = "Set Time(HH:MM AM/PM)"; ObjectID = "23a-ph-VrP"; */
+"23a-ph-VrP.placeholder" = "સેટ ટાઈમ(HH:MM AM/PM)";
+
+/* Class = "UITextField"; text = "Set Date(DD-MM-yyyy)"; ObjectID = "2WC-4H-gWa"; */
+"2WC-4H-gWa.text" = "સેટ ડેટ(DD-MM-yyyy)";
+
+/* Class = "UILabel"; text = "Proposal Submitted"; ObjectID = "2Y5-r0-fvn"; */
+"2Y5-r0-fvn.text" = "પ્રોપોઝલ સબમિટેડ";
+
+/* Class = "UILabel"; text = "Select Influencer"; ObjectID = "2c6-kN-DC1"; */
+"2c6-kN-DC1.text" = "સિલેક્ટ ઈનફ્લુએન્સર";
+
+/* Class = "UILabel"; text = "No Contact"; ObjectID = "37B-6t-M5l"; */
+"37B-6t-M5l.text" = "નો કોન્ટેક્ટ";
+
+/* Class = "UILabel"; text = "Manager Raina"; ObjectID = "3EU-EH-gOu"; */
+"3EU-EH-gOu.text" = "Manager Raina";
+
+/* Class = "UILabel"; text = "Order Expected By"; ObjectID = "3fP-ic-YW8"; */
+"3fP-ic-YW8.text" = "ઓર્ડર એક્સપેકટેડ બાય";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4du-yG-B0O"; */
+"4du-yG-B0O.text" = "Label";
+
+/* Class = "UILabel"; text = "Contact No."; ObjectID = "4uB-Wt-5jP"; */
+"4uB-Wt-5jP.text" = "કોન્ટેક્ટ નં.";
+
+/* Class = "UILabel"; text = "28-06-2017, 04:56 PM"; ObjectID = "57g-ZG-lox"; */
+"57g-ZG-lox.text" = "28-06-2017, 04:56 PM";
+
+/* Class = "UIButton"; normalTitle = "Refresh Location"; ObjectID = "5Gz-jO-JLM"; */
+"5Gz-jO-JLM.normalTitle" = "Refresh Location";
+
+/* Class = "UIButton"; normalTitle = "HOT"; ObjectID = "5xr-z5-tpt"; */
+"5xr-z5-tpt.normalTitle" = "હોટ";
+
+/* Class = "UILabel"; text = "Select Contact"; ObjectID = "6fR-cQ-Fvw"; */
+"6fR-cQ-Fvw.text" = "સિલેક્ટ કોન્ટેક્ટ";
+
+/* Class = "UILabel"; text = "Hitter"; ObjectID = "7FJ-gw-UdS"; */
+"7FJ-gw-UdS.text" = "Hitter";
+
+/* Class = "UILabel"; text = "Select User To Assign"; ObjectID = "7V5-fk-MPY"; */
+"7V5-fk-MPY.text" = "અસાઈન માટે યુઝર પસંદ કરો";
+
+/* Class = "UILabel"; text = "Lead Source"; ObjectID = "8cw-hV-aEj"; */
+"8cw-hV-aEj.text" = "લીડ સોઉર્સ";
+
+/* Class = "UILabel"; text = "Order Lost Reason"; ObjectID = "8oj-Ru-RyH"; */
+"8oj-Ru-RyH.text" = "ઓર્ડર લોસ્ટ રીઝન";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "946-ju-Wll"; */
+"946-ju-Wll.text" = "Label";
+
+/* Class = "UILabel"; text = "LEAD TYPE"; ObjectID = "9UC-B4-vJV"; */
+"9UC-B4-vJV.text" = "લીડ ટાઇપ";
+
+/* Class = "UILabel"; text = "Product Interested In *"; ObjectID = "9xf-bP-jam"; */
+"9xf-bP-jam.text" = "પ્રોડક્ટ ઈન્ટરેસ્ટેડ ઈન *";
+
+/* Class = "UILabel"; text = "Customer Name"; ObjectID = "AyD-9Z-GPL"; */
+"AyD-9Z-GPL.text" = "કસ્ટમર નામ";
+
+/* Class = "UILabel"; text = "Very Poor"; ObjectID = "BU6-Yl-dTv"; */
+"BU6-Yl-dTv.text" = "વેરી પૂઅર";
+
+/* Class = "UITextField"; placeholder = "Budget"; ObjectID = "BYG-Pu-05A"; */
+"BYG-Pu-05A.placeholder" = "બજેટ";
+
+/* Class = "UILabel"; text = "To"; ObjectID = "C2D-ll-QBO"; */
+"C2D-ll-QBO.text" = "ટુ";
+
+/* Class = "UILabel"; text = "Select Lead Source"; ObjectID = "C8X-22-9fO"; */
+"C8X-22-9fO.text" = "સિલેક્ટ લીડ સોઉર્સ";
+
+/* Class = "UIButton"; normalTitle = "CHECK-OUT"; ObjectID = "CTT-Mf-dZv"; */
+"CTT-Mf-dZv.normalTitle" = "ચેક-આઉટ";
+
+/* Class = "UILabel"; text = "Visit No:"; ObjectID = "CrB-hi-3Gn"; */
+"CrB-hi-3Gn.text" = "વિઝિટ નં:";
+
+/* Class = "UITextField"; placeholder = "Set Date(DD-MM-yyyy)"; ObjectID = "CxF-kr-ZbI"; */
+"CxF-kr-ZbI.placeholder" = "સેટ ડેટ(DD-MM-yyyy)";
+
+/* Class = "UILabel"; text = "Select Contact"; ObjectID = "DPI-Dh-2zg"; */
+"DPI-Dh-2zg.text" = "સિલેક્ટ કોન્ટેક્ટ";
+
+/* Class = "UILabel"; text = "Customer Address"; ObjectID = "DfL-DW-tA7"; */
+"DfL-DW-tA7.text" = "કસ્ટમર એડ્રેસ";
+
+/* Class = "UILabel"; text = "Outcome"; ObjectID = "Di3-cI-VZ3"; */
+"Di3-cI-VZ3.text" = "આઉટકમ";
+
+/* Class = "UILabel"; text = "Big Bang Customer"; ObjectID = "EXb-5l-Xno"; */
+"EXb-5l-Xno.text" = "Big Bang Customer";
+
+/* Class = "UILabel"; text = "28-06-2017, 04:56 PM"; ObjectID = "Ezd-xg-toh"; */
+"Ezd-xg-toh.text" = "28-06-2017, 04:56 PM";
+
+/* Class = "UIButton"; normalTitle = "Customer"; ObjectID = "FNl-ni-vSr"; */
+"FNl-ni-vSr.normalTitle" = "કસ્ટમર";
+
+/* Class = "UIButton"; selectedTitle = "Customer"; ObjectID = "FNl-ni-vSr"; */
+"FNl-ni-vSr.selectedTitle" = "કસ્ટમર";
+
+/* Class = "UILabel"; text = "26-06-2017, 06:50 PM"; ObjectID = "GB9-gx-4nz"; */
+"GB9-gx-4nz.text" = "26-06-2017, 06:50 PM";
+
+/* Class = "UITextField"; placeholder = "Any Remarks"; ObjectID = "GOs-kU-6vg"; */
+"GOs-kU-6vg.placeholder" = "કોઈપણ રીમાર્કસ";
+
+/* Class = "UILabel"; text = "Excellent"; ObjectID = "GdY-Yp-mS9"; */
+"GdY-Yp-mS9.text" = "ઉત્તમ";
+
+/* Class = "UILabel"; text = "Assigned To:"; ObjectID = "H0i-RK-OSi"; */
+"H0i-RK-OSi.text" = "અસાઈન:";
+
+/* Class = "UIButton"; normalTitle = "HOT"; ObjectID = "H29-gE-ZR3"; */
+"H29-gE-ZR3.normalTitle" = "હોટ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HX0-Xf-vQY"; */
+"HX0-Xf-vQY.text" = "Label";
+
+/* Class = "UILabel"; text = "Influencer Details"; ObjectID = "IXY-TP-s0Z"; */
+"IXY-TP-s0Z.text" = "ઈનફ્લુએન્સર ડિટેઇલ્સ";
+
+/* Class = "UILabel"; text = "6S"; ObjectID = "IiG-1F-sYz"; */
+"IiG-1F-sYz.text" = "6S";
+
+/* Class = "UILabel"; text = "SURESH PRABHU"; ObjectID = "JWg-fv-Yu0"; */
+"JWg-fv-Yu0.text" = "SURESH PRABHU";
+
+/* Class = "UILabel"; text = "8866044444"; ObjectID = "Jbq-1H-zmm"; */
+"Jbq-1H-zmm.text" = "8866044444";
+
+/* Class = "UILabel"; text = "Big Bang Customer"; ObjectID = "JgB-ed-V2I"; */
+"JgB-ed-V2I.text" = "Big Bang Customer";
+
+/* Class = "UILabel"; text = "Interaction Type"; ObjectID = "KNv-4I-aEW"; */
+"KNv-4I-aEW.text" = "ઇન્ટરેકશન ટાઈપ";
+
+/* Class = "UILabel"; text = "REMINDER IF ANY"; ObjectID = "KqX-pZ-DGF"; */
+"KqX-pZ-DGF.text" = "રીમાઇન્ડર જો હોય તો";
+
+/* Class = "UIButton"; normalTitle = "COLD"; ObjectID = "KsM-Yp-46C"; */
+"KsM-Yp-46C.normalTitle" = "કોલ્ડ";
+
+/* Class = "UIButton"; normalTitle = "WARM"; ObjectID = "Kym-el-xjJ"; */
+"Kym-el-xjJ.normalTitle" = "વોર્મ";
+
+/* Class = "UILabel"; text = "Next Action Date"; ObjectID = "KzK-xb-e1a"; */
+"KzK-xb-e1a.text" = "નેક્સટ એકશન ડેટ";
+
+/* Class = "UILabel"; text = "LEAD TYPE"; ObjectID = "LZH-mO-Hzm"; */
+"LZH-mO-Hzm.text" = "લીડ ટાઇપ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Ldg-tp-86h"; */
+"Ldg-tp-86h.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Mw6-GJ-ohA"; */
+"Mw6-GJ-ohA.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Quantity *"; ObjectID = "N2X-K6-2gl"; */
+"N2X-K6-2gl.placeholder" = "કવોન્ટિટી *";
+
+/* Class = "UILabel"; text = "Order Expected By"; ObjectID = "NKa-2e-Acj"; */
+"NKa-2e-Acj.text" = "ઓર્ડર એક્સપેકટેડ બાય";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "OT5-ET-p7k"; */
+"OT5-ET-p7k.text" = "Label";
+
+/* Class = "UILabel"; text = "99-99-9999"; ObjectID = "Oy4-jP-ruj"; */
+"Oy4-jP-ruj.text" = "99-99-9999";
+
+/* Class = "UILabel"; text = "Select Customer"; ObjectID = "PxB-8u-vap"; */
+"PxB-8u-vap.text" = "સિલેક્ટ કસ્ટમર";
+
+/* Class = "UILabel"; text = "09-06-2016"; ObjectID = "Q5k-bD-PPk"; */
+"Q5k-bD-PPk.text" = "09-06-2016";
+
+/* Class = "UILabel"; text = "Check-OUT: "; ObjectID = "QBJ-Oi-b87"; */
+"QBJ-Oi-b87.text" = "ચેક-આઉટ: ";
+
+/* Class = "UILabel"; text = "890"; ObjectID = "QNy-Tf-wSh"; */
+"QNy-Tf-wSh.text" = "890";
+
+/* Class = "UILabel"; text = "Data Sync is in progress Please Wait....."; ObjectID = "QpY-ld-B29"; */
+"QpY-ld-B29.text" = "ડેટા સમન્વય પ્રગતિમાં છે કૃપા કરીને રાહ જુઓ .....";
+
+/* Class = "UILabel"; text = "Add New Influencer"; ObjectID = "RcG-ac-Olt"; */
+"RcG-ac-Olt.text" = "એડ ન્યૂ ઈનફ્લુએન્સર";
+
+/* Class = "UILabel"; text = "UPDATE LEAD STATUS"; ObjectID = "Rt9-eV-hYN"; */
+"Rt9-eV-hYN.text" = "અપડેટ લીડ સ્ટેટ્સ";
+
+/* Class = "UIButton"; normalTitle = "CHECK-IN"; ObjectID = "Ruh-5w-tZB"; */
+"Ruh-5w-tZB.normalTitle" = "ચેક-ઈન";
+
+/* Class = "UILabel"; text = "9510703177"; ObjectID = "S7b-6g-XW7"; */
+"S7b-6g-XW7.text" = "9510703177";
+
+/* Class = "UIButton"; normalTitle = "WARM"; ObjectID = "SIB-i0-55v"; */
+"SIB-i0-55v.normalTitle" = "વોર્મ";
+
+/* Class = "UITextField"; placeholder = "Budget"; ObjectID = "SQk-Ug-bmE"; */
+"SQk-Ug-bmE.placeholder" = "બજેટ";
+
+/* Class = "UITextField"; placeholder = "Order Lost To"; ObjectID = "Sec-PI-05E"; */
+"Sec-PI-05E.placeholder" = "ઓર્ડર લોસ્ટ ટુ";
+
+/* Class = "UILabel"; text = "Customer Orintation"; ObjectID = "Ukx-a1-9aw"; */
+"Ukx-a1-9aw.text" = "કસ્ટમર ઓરિન્ટેશન";
+
+/* Class = "UILabel"; text = "Customer Asked For Proposal"; ObjectID = "Ut6-NS-nF0"; */
+"Ut6-NS-nF0.text" = "Customer Asked For Proposal";
+
+/* Class = "UILabel"; text = "NEXT ACTION DETAILS"; ObjectID = "V8X-2O-dXi"; */
+"V8X-2O-dXi.text" = "નેક્સટ એકશન ડિટેઈલ્સ";
+
+/* Class = "UILabel"; text = "99-99-9999"; ObjectID = "VKk-Gr-0i0"; */
+"VKk-Gr-0i0.text" = "99-99-9999";
+
+/* Class = "UILabel"; text = "[Influencer]"; ObjectID = "VWI-dP-o9T"; */
+"VWI-dP-o9T.text" = "[ઈનફ્લુએન્સર]";
+
+/* Class = "UILabel"; text = "Add New Address"; ObjectID = "Wb0-nd-7NC"; */
+"Wb0-nd-7NC.text" = "એડ ન્યૂ એડ્રેસ";
+
+/* Class = "UILabel"; text = "Add New Contact"; ObjectID = "XrU-NL-A3l"; */
+"XrU-NL-A3l.text" = "નવું સંપર્ક ઉમેરો";
+
+/* Class = "UILabel"; text = "12:56"; ObjectID = "YrZ-76-CVu"; */
+"YrZ-76-CVu.text" = "12:56";
+
+/* Class = "UILabel"; text = "890"; ObjectID = "ZHY-cX-YDQ"; */
+"ZHY-cX-YDQ.text" = "890";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "ZHk-U9-y3Y"; */
+"ZHk-U9-y3Y.text" = "પ્રાઈઝ";
+
+/* Class = "UILabel"; text = "Select Address"; ObjectID = "ZVv-Yk-YBH"; */
+"ZVv-Yk-YBH.text" = "સિલેક્ટ એડ્રેસ";
+
+/* Class = "UITextField"; placeholder = "Set Time(HH:MM AM/PM)"; ObjectID = "Zk5-DV-dhR"; */
+"Zk5-DV-dhR.placeholder" = "સેટ ટાઈમ(HH:MM AM/PM)";
+
+/* Class = "UILabel"; text = "Customer Orientation"; ObjectID = "a6m-nw-C5S"; */
+"a6m-nw-C5S.text" = "કસ્ટમર ઓરિએંટેશન";
+
+/* Class = "UILabel"; text = "6S"; ObjectID = "ad7-YG-MCM"; */
+"ad7-YG-MCM.text" = "6S";
+
+/* Class = "UILabel"; text = "OUR CHANCE OF GETTING ORDER"; ObjectID = "aql-Ee-y3y"; */
+"aql-Ee-y3y.text" = "અવર ચાન્સ ઓફ ગેટીંગ ઓર્ડર";
+
+/* Class = "UILabel"; text = "Customer Details *"; ObjectID = "b09-7N-cpV"; */
+"b09-7N-cpV.text" = "કસ્ટમર ડિટેઈલ્સ *";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bRL-rf-PF7"; */
+"bRL-rf-PF7.text" = "Label";
+
+/* Class = "UILabel"; text = "Next Action Date"; ObjectID = "bVa-Mq-4cL"; */
+"bVa-Mq-4cL.text" = "નેક્સટ એકશન ડેટ";
+
+/* Class = "UILabel"; text = "Person For Contacts"; ObjectID = "baB-dX-CMI"; */
+"baB-dX-CMI.text" = "વ્યક્તિ ફોર કોન્ટેક્ટસ";
+
+/* Class = "UIButton"; normalTitle = "Influencer"; ObjectID = "c38-3j-6Ns"; */
+"c38-3j-6Ns.normalTitle" = "ઈનફ્લુએન્સર";
+
+/* Class = "UIButton"; selectedTitle = "Influencer"; ObjectID = "c38-3j-6Ns"; */
+"c38-3j-6Ns.selectedTitle" = "ઈનફ્લુએન્સર";
+
+/* Class = "UILabel"; text = "Proposal Submitted"; ObjectID = "c5U-3x-QzN"; */
+"c5U-3x-QzN.text" = "પ્રોપોઝલ સબમિટેડ";
+
+/* Class = "UILabel"; text = "Big Bang Customer"; ObjectID = "c68-Gn-rR9"; */
+"c68-Gn-rR9.text" = "Big Bang Customer";
+
+/* Class = "UILabel"; text = "890"; ObjectID = "cCH-YK-SX9"; */
+"cCH-YK-SX9.text" = "890";
+
+/* Class = "UITextField"; placeholder = "Any Remarks"; ObjectID = "ckH-5Y-m5R"; */
+"ckH-5Y-m5R.placeholder" = "કોઈપણ રીમાર્કસ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "csE-eZ-9aK"; */
+"csE-eZ-9aK.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dnB-qZ-884"; */
+"dnB-qZ-884.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Quantity"; ObjectID = "doe-iz-Hbg"; */
+"doe-iz-Hbg.placeholder" = "કવોન્ટિટી";
+
+/* Class = "UILabel"; text = "INTERACTION TIME"; ObjectID = "eHb-cb-aa7"; */
+"eHb-cb-aa7.text" = "ઇન્ટરેકશન ટાઈમ";
+
+/* Class = "UILabel"; text = "Influencer Address"; ObjectID = "eOZ-mT-V9m"; */
+"eOZ-mT-V9m.text" = "ઈનફ્લુએન્સર એડ્રેસ";
+
+/* Class = "UILabel"; text = "Contact Person"; ObjectID = "eyv-Hn-eEF"; */
+"eyv-Hn-eEF.text" = "સંપર્ક વ્યક્તિ";
+
+/* Class = "UILabel"; text = "Select Address"; ObjectID = "f41-nv-JrR"; */
+"f41-nv-JrR.text" = "સિલેક્ટ એડ્રેસ";
+
+/* Class = "UILabel"; text = "REMINDER IF ANY"; ObjectID = "fC2-mA-YfS"; */
+"fC2-mA-YfS.text" = "રીમાઇન્ડર જો હોય તો";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gSU-Mx-ZTf"; */
+"gSU-Mx-ZTf.text" = "Label";
+
+/* Class = "UILabel"; text = "890"; ObjectID = "hEJ-hh-KVo"; */
+"hEJ-hh-KVo.text" = "890";
+
+/* Class = "UITextField"; text = "Set Time(HH:MM AM/PM)"; ObjectID = "hF6-hP-z9C"; */
+"hF6-hP-z9C.text" = "સેટ ટાઈમ(HH:MM AM/PM)";
+
+/* Class = "UILabel"; text = "Visit No:"; ObjectID = "iSn-gL-368"; */
+"iSn-gL-368.text" = "વિઝિટ નં:";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "ijp-Wk-0S6"; */
+"ijp-Wk-0S6.normalTitle" = "સબમિટ";
+
+/* Class = "UILabel"; text = "Add Product"; ObjectID = "jQA-a9-Ea4"; */
+"jQA-a9-Ea4.text" = "એડ પ્રોડક્ટ";
+
+/* Class = "UIButton"; normalTitle = "COLD"; ObjectID = "jkq-qq-XhC"; */
+"jkq-qq-XhC.normalTitle" = "કોલ્ડ";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "jlx-cl-tb9"; */
+"jlx-cl-tb9.normalTitle" = "સબમિટ";
+
+/* Class = "UILabel"; text = "[Influencer]"; ObjectID = "kMG-Jp-zV9"; */
+"kMG-Jp-zV9.text" = "[ઈનફ્લુએન્સર]";
+
+/* Class = "UILabel"; text = "OUR CHANCE OF GETTING ORDER"; ObjectID = "low-Fj-llI"; */
+"low-Fj-llI.text" = "અવર ચાન્સ ઓફ ગેટીંગ ઓર્ડર";
+
+/* Class = "UITextField"; placeholder = "Set Time(HH:MM AM/PM)"; ObjectID = "mXl-vj-8L9"; */
+"mXl-vj-8L9.placeholder" = "સેટ ટાઈમ(HH:MM AM/PM)";
+
+/* Class = "UITextField"; text = "Set Time(HH:MM AM/PM)"; ObjectID = "mkx-Hs-cwT"; */
+"mkx-Hs-cwT.text" = "સેટ ટાઈમ(HH:MM AM/PM)";
+
+/* Class = "UITextField"; placeholder = "Action Needed to Close Order"; ObjectID = "mqY-Ub-aTC"; */
+"mqY-Ub-aTC.placeholder" = "Action Needed to Close Order";
+
+/* Class = "UITextField"; placeholder = "Set Date(DD-MM-yyyy)"; ObjectID = "nHG-tC-dF4"; */
+"nHG-tC-dF4.placeholder" = "સેટ ડેટ(DD-MM-yyyy)";
+
+/* Class = "UIButton"; normalTitle = "Customer"; ObjectID = "nTU-8F-Nzg"; */
+"nTU-8F-Nzg.normalTitle" = "કસ્ટમર";
+
+/* Class = "UIButton"; selectedTitle = "Customer"; ObjectID = "nTU-8F-Nzg"; */
+"nTU-8F-Nzg.selectedTitle" = "કસ્ટમર";
+
+/* Class = "UILabel"; text = "Excellent"; ObjectID = "oqX-5o-AZn"; */
+"oqX-5o-AZn.text" = "ઉત્તમ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ost-pG-cZe"; */
+"ost-pG-cZe.text" = "Label";
+
+/* Class = "UILabel"; text = "Add New Customer"; ObjectID = "pxS-4p-qMn"; */
+"pxS-4p-qMn.text" = "એડ ન્યૂ કસ્ટમર";
+
+/* Class = "UILabel"; text = "26-06-2017, 06:50 PM"; ObjectID = "q7f-vr-Eiy"; */
+"q7f-vr-Eiy.text" = "26-06-2017, 06:50 PM";
+
+/* Class = "UILabel"; text = "Big Bang Customer"; ObjectID = "qAu-oZ-8tg"; */
+"qAu-oZ-8tg.text" = "Big Bang Customer";
+
+/* Class = "UILabel"; text = "28 JUNE"; ObjectID = "rtW-Cw-kZA"; */
+"rtW-Cw-kZA.text" = "28 JUNE";
+
+/* Class = "UILabel"; text = "Check-IN: "; ObjectID = "sVZ-am-wB3"; */
+"sVZ-am-wB3.text" = "ચેક-ઈન: ";
+
+/* Class = "UILabel"; text = "Order Expected Date"; ObjectID = "skI-gj-nEh"; */
+"skI-gj-nEh.text" = "ઓર્ડર એક્સપેકટેડ ડેટ";
+
+/* Class = "UILabel"; text = "Add New Contact"; ObjectID = "skI-yn-bT8"; */
+"skI-yn-bT8.text" = "નવું સંપર્ક ઉમેરો";
+
+/* Class = "UIButton"; normalTitle = "Ok"; ObjectID = "t1h-s5-wXs"; */
+"t1h-s5-wXs.normalTitle" = "ઓકે";
+
+/* Class = "UILabel"; text = "Very Poor"; ObjectID = "ud8-LQ-aFr"; */
+"ud8-LQ-aFr.text" = "વેરી પૂઅર";
+
+/* Class = "UILabel"; text = "Add Product"; ObjectID = "vCL-3x-VnC"; */
+"vCL-3x-VnC.text" = "એડ પ્રોડક્ટ";
+
+/* Class = "UILabel"; text = "Big Bang Customer"; ObjectID = "vDL-Qi-3ME"; */
+"vDL-Qi-3ME.text" = "Big Bang Customer";
+
+/* Class = "UILabel"; text = "Remarks"; ObjectID = "w5c-r8-lQy"; */
+"w5c-r8-lQy.text" = "રીમાર્કસ";
+
+/* Class = "UILabel"; text = "Hitter"; ObjectID = "wQk-Pg-SH5"; */
+"wQk-Pg-SH5.text" = "Hitter";
+
+/* Class = "UITextField"; text = "01-09-2017"; ObjectID = "wVD-50-HvA"; */
+"wVD-50-HvA.text" = "01-09-2017";
+
+/* Class = "UILabel"; text = "Lead Source"; ObjectID = "wZT-35-oDf"; */
+"wZT-35-oDf.text" = "લીડ સોઉર્સ";
+
+/* Class = "UILabel"; text = "Select Contact"; ObjectID = "wo4-93-tsd"; */
+"wo4-93-tsd.text" = "સિલેક્ટ કોન્ટેક્ટ";
+
+/* Class = "UILabel"; text = "28 JUNE"; ObjectID = "ww2-Rl-Ia5"; */
+"ww2-Rl-Ia5.text" = "28 JUNE";
+
+/* Class = "UIButton"; normalTitle = "Influencer"; ObjectID = "xHE-IW-EBn"; */
+"xHE-IW-EBn.normalTitle" = "ઈનફ્લુએન્સર";
+
+/* Class = "UIButton"; selectedTitle = "Influencer"; ObjectID = "xHE-IW-EBn"; */
+"xHE-IW-EBn.selectedTitle" = "ઈનફ્લુએન્સર";
+
+/* Class = "UILabel"; text = "Add New Address"; ObjectID = "xMB-5y-gqj"; */
+"xMB-5y-gqj.text" = "એડ ન્યૂ એડ્રેસ";
+
+/* Class = "UITextField"; text = "01-09-2017"; ObjectID = "xrr-Mu-g9J"; */
+"xrr-Mu-g9J.text" = "01-09-2017";
+
+/* Class = "UILabel"; text = "Assigned To: Not assigned yet"; ObjectID = "yiw-aW-T4O"; */
+"yiw-aW-T4O.text" = "અસાઈન: હજી સુધી અસાઈન નથી";
+
+/* Class = "UITextField"; placeholder = "Set Date(DD-MM-yyyy)"; ObjectID = "z3j-GU-7FZ"; */
+"z3j-GU-7FZ.placeholder" = "સેટ ડેટ(DD-MM-yyyy)";
+
+/* Class = "UILabel"; text = "Customer Outcome"; ObjectID = "zPL-6l-XRr"; */
+"zPL-6l-XRr.text" = "કસ્ટમર આઉટકમ";

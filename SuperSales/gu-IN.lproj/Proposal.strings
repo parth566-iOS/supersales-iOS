@@ -1,0 +1,210 @@
+
+/* Class = "UILabel"; text = "99-99-9999"; ObjectID = "1yT-KV-gIt"; */
+"1yT-KV-gIt.text" = "99-99-9999";
+
+/* Class = "UIButton"; normalTitle = "ACCEPT"; ObjectID = "21a-Bd-DcH"; */
+"21a-Bd-DcH.normalTitle" = "એસેપ્ત";
+
+/* Class = "UILabel"; text = "Add New Contact"; ObjectID = "21u-tZ-sPa"; */
+"21u-tZ-sPa.text" = "નવું સંપર્ક ઉમેરો";
+
+/* Class = "UILabel"; text = "DIRECT PROPOSAL?"; ObjectID = "2rq-kR-4rQ"; */
+"2rq-kR-4rQ.text" = "ડાયરેક્ટ પ્રોપોઝલ?";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "3BS-qp-w56"; */
+"3BS-qp-w56.text" = "0.00";
+
+/* Class = "UILabel"; text = "Gross Amount"; ObjectID = "3XH-wO-HOG"; */
+"3XH-wO-HOG.text" = "ગ્રોસ અમાઉન્ટ";
+
+/* Class = "UITextField"; placeholder = "Price"; ObjectID = "3yM-Xs-xGO"; */
+"3yM-Xs-xGO.placeholder" = "પ્રાઈઝ";
+
+/* Class = "UILabel"; text = "Gross Amount"; ObjectID = "5lY-Ii-CYm"; */
+"5lY-Ii-CYm.text" = "ગ્રોસ અમાઉન્ટ";
+
+/* Class = "UILabel"; text = "Select Contact"; ObjectID = "6VR-SS-eNe"; */
+"6VR-SS-eNe.text" = "સિલેક્ટ કોન્ટેક્ટ";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "6hp-eo-m6M"; */
+"6hp-eo-m6M.placeholder" = "ડિસ્ક્રિપ્શન";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "8W2-z4-B1k"; */
+"8W2-z4-B1k.text" = "0.00";
+
+/* Class = "UILabel"; text = "Proposal No:"; ObjectID = "8p3-Rj-Ddu"; */
+"8p3-Rj-Ddu.text" = "પ્રોપોઝલ નં:";
+
+/* Class = "UITextField"; placeholder = "Action needed to get order"; ObjectID = "9C2-qN-VYA"; */
+"9C2-qN-VYA.placeholder" = "એકશન નીડેડ ટુ ગેટ ઓર્ડર";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "9Vy-VD-huO"; */
+"9Vy-VD-huO.text" = "ડિસ્કાઉન્ટ";
+
+/* Class = "UILabel"; text = "SGST @6.0%"; ObjectID = "9oJ-ap-ScT"; */
+"9oJ-ap-ScT.text" = "SGST @6.0%";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "B4f-a8-Ktj"; */
+"B4f-a8-Ktj.placeholder" = "ડિસ્ક્રિપ્શન";
+
+/* Class = "UILabel"; text = "10000"; ObjectID = "BGo-rW-X1F"; */
+"BGo-rW-X1F.text" = "10000";
+
+/* Class = "UILabel"; text = "6S"; ObjectID = "DKM-KC-CJ2"; */
+"DKM-KC-CJ2.text" = "6S";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "DO6-CC-K6E"; */
+"DO6-CC-K6E.text" = "0.00";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Dge-uA-5YD"; */
+"Dge-uA-5YD.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Eh9-D4-dxH"; */
+"Eh9-D4-dxH.text" = "Label";
+
+/* Class = "UILabel"; text = "SGST @6.0%"; ObjectID = "GfO-LE-sDi"; */
+"GfO-LE-sDi.text" = "SGST @6.0%";
+
+/* Class = "UITextField"; placeholder = "Order Expected Date"; ObjectID = "I18-6g-iZ0"; */
+"I18-6g-iZ0.placeholder" = "ઓર્ડર એક્સપેકટેડ ડેટ";
+
+/* Class = "UILabel"; text = "Add Product Details"; ObjectID = "LGr-7T-HbQ"; */
+"LGr-7T-HbQ.text" = "એડ પ્રોડક્ટ ડિટેઇલ્સ";
+
+/* Class = "UITextField"; placeholder = "Quantity"; ObjectID = "LQp-Px-uVW"; */
+"LQp-Px-uVW.placeholder" = "કવોન્ટિટી";
+
+/* Class = "UILabel"; text = "Select Lead"; ObjectID = "MQK-8Y-pvL"; */
+"MQK-8Y-pvL.text" = "સિલેક્ટ લીડ";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "N30-oH-zNM"; */
+"N30-oH-zNM.text" = "0.00";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "OS3-dC-2h9"; */
+"OS3-dC-2h9.text" = "0.00";
+
+/* Class = "UITextField"; placeholder = "Discount"; ObjectID = "OaF-nx-9KA"; */
+"OaF-nx-9KA.placeholder" = "ડિસ્કાઉન્ટ";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "Piz-AQ-XOj"; */
+"Piz-AQ-XOj.text" = "0.00";
+
+/* Class = "UILabel"; text = "Total Amount"; ObjectID = "S0m-Et-lof"; */
+"S0m-Et-lof.text" = "ટોટલ અમાઉન્ટ";
+
+/* Class = "UILabel"; text = "Select Contacts"; ObjectID = "S8L-Vz-ZXf"; */
+"S8L-Vz-ZXf.text" = "સિલેક્ટ કોન્ટેક્ટસ";
+
+/* Class = "UIButton"; normalTitle = "REJECT"; ObjectID = "Sy2-vu-cFU"; */
+"Sy2-vu-cFU.normalTitle" = "રિજેક્ટ";
+
+/* Class = "UILabel"; text = "SGST @6.0%"; ObjectID = "Tc2-gK-luI"; */
+"Tc2-gK-luI.text" = "SGST @6.0%";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "VIl-JE-mzo"; */
+"VIl-JE-mzo.text" = "0.00";
+
+/* Class = "UILabel"; text = "890"; ObjectID = "W7j-Nc-5Mt"; */
+"W7j-Nc-5Mt.text" = "890";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "WuP-ge-nJl"; */
+"WuP-ge-nJl.text" = "Label";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "XMK-Tx-Kkn"; */
+"XMK-Tx-Kkn.text" = "0.00";
+
+/* Class = "UILabel"; text = "Add New Customer"; ObjectID = "XeM-5s-Fl5"; */
+"XeM-5s-Fl5.text" = "એડ ન્યૂ કસ્ટમર";
+
+/* Class = "UITextField"; placeholder = "Discount"; ObjectID = "Yne-3F-Z2d"; */
+"Yne-3F-Z2d.placeholder" = "ડિસ્કાઉન્ટ";
+
+/* Class = "UITextField"; placeholder = "Discount"; ObjectID = "arQ-eP-IyR"; */
+"arQ-eP-IyR.placeholder" = "ડિસ્કાઉન્ટ";
+
+/* Class = "UILabel"; text = "Total Amount"; ObjectID = "bMB-bh-RXG"; */
+"bMB-bh-RXG.text" = "ટોટલ અમાઉન્ટ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bOI-4e-wee"; */
+"bOI-4e-wee.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "bTs-25-gsI"; */
+"bTs-25-gsI.normalTitle" = "સબમિટ કરો";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "eWj-cp-vFX"; */
+"eWj-cp-vFX.text" = "0.00";
+
+/* Class = "UILabel"; text = "Products:"; ObjectID = "gSE-wg-c1a"; */
+"gSE-wg-c1a.text" = "પ્રોડક્ટસ:";
+
+/* Class = "UITextField"; placeholder = "Discount"; ObjectID = "ggw-jl-Jmp"; */
+"ggw-jl-Jmp.placeholder" = "ડિસ્કાઉન્ટ";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "gy6-Up-Xh3"; */
+"gy6-Up-Xh3.text" = "0.00";
+
+/* Class = "UILabel"; text = "Select Customer"; ObjectID = "hhV-oO-UUW"; */
+"hhV-oO-UUW.text" = "સિલેક્ટ કસ્ટમર";
+
+/* Class = "UILabel"; text = "Product Net Amount"; ObjectID = "iAg-k4-mxr"; */
+"iAg-k4-mxr.text" = "પ્રોડક્ટ નેટ અમાઉન્ટ";
+
+/* Class = "UILabel"; text = "Customer Not Mapped"; ObjectID = "iPq-ZG-XIt"; */
+"iPq-ZG-XIt.text" = "કસ્ટમર મેપ નથી";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "ixE-gI-Fue"; */
+"ixE-gI-Fue.text" = "0.00";
+
+/* Class = "UILabel"; text = "Add Product Details"; ObjectID = "jCu-UQ-hX3"; */
+"jCu-UQ-hX3.text" = "એડ પ્રોડક્ટ ડિટેઇલ્સ";
+
+/* Class = "UILabel"; text = "Customer Details"; ObjectID = "jgc-Nh-1Er"; */
+"jgc-Nh-1Er.text" = "કસ્ટમર ડિટેઈલ્સ";
+
+/* Class = "UILabel"; text = "SGST @6.0%"; ObjectID = "ku2-zH-lds"; */
+"ku2-zH-lds.text" = "SGST @6.0%";
+
+/* Class = "UILabel"; text = "Net Amount"; ObjectID = "kyB-2a-29Q"; */
+"kyB-2a-29Q.text" = "નેટ અમાઉન્ટ";
+
+/* Class = "UILabel"; text = "6S"; ObjectID = "o00-ud-sDG"; */
+"o00-ud-sDG.text" = "6S";
+
+/* Class = "UILabel"; text = "10000"; ObjectID = "ojn-ne-lre"; */
+"ojn-ne-lre.text" = "10000";
+
+/* Class = "UILabel"; text = "Product Net Amount"; ObjectID = "pqo-1H-Nd7"; */
+"pqo-1H-Nd7.text" = "પ્રોડક્ટ નેટ અમાઉન્ટ";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "qBU-tv-yKP"; */
+"qBU-tv-yKP.text" = "0.00";
+
+/* Class = "UITextField"; placeholder = "Quantity"; ObjectID = "qra-ak-HKg"; */
+"qra-ak-HKg.placeholder" = "કવોન્ટિટી";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "sWd-nq-npG"; */
+"sWd-nq-npG.text" = "0.00";
+
+/* Class = "UITextField"; placeholder = "Price"; ObjectID = "urD-Fa-Ssy"; */
+"urD-Fa-Ssy.placeholder" = "પ્રાઈઝ";
+
+/* Class = "UIButton"; normalTitle = "SAVE"; ObjectID = "v6h-BW-Umd"; */
+"v6h-BW-Umd.normalTitle" = "સેવ";
+
+/* Class = "UILabel"; text = "Net Amount"; ObjectID = "wZc-1T-dKl"; */
+"wZc-1T-dKl.text" = "નેટ અમાઉન્ટ";
+
+/* Class = "UILabel"; text = "Product Amount"; ObjectID = "wfn-xZ-lrH"; */
+"wfn-xZ-lrH.text" = "પ્રોડક્ટ અમાઉન્ટ";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "wiA-cO-fPa"; */
+"wiA-cO-fPa.text" = "0.00";
+
+/* Class = "UILabel"; text = "Product Amount"; ObjectID = "y7q-lF-CEI"; */
+"y7q-lF-CEI.text" = "પ્રોડક્ટ અમાઉન્ટ";
+
+/* Class = "UILabel"; text = "Add Product Details"; ObjectID = "z0D-CV-JWD"; */
+"z0D-CV-JWD.text" = "એડ પ્રોડક્ટ ડિટેઇલ્સ";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "zuA-uE-f9F"; */
+"zuA-uE-f9F.text" = "ડિસ્કાઉન્ટ";

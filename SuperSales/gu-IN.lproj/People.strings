@@ -1,0 +1,267 @@
+
+/* Class = "UILabel"; text = "Outcome:"; ObjectID = "15g-gw-mXR"; */
+"15g-gw-mXR.text" = "આઉટકમ:";
+
+/* Class = "UILabel"; text = "14"; ObjectID = "2AL-Rn-tMp"; */
+"2AL-Rn-tMp.text" = "14";
+
+/* Class = "UILabel"; text = "Budget"; ObjectID = "3Yl-oa-T1R"; */
+"3Yl-oa-T1R.text" = "બજેટ";
+
+/* Class = "UILabel"; text = "Customer Not Mapped"; ObjectID = "3fh-Be-m2D"; */
+"3fh-Be-m2D.text" = "કસ્ટમર મેપ નથી";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "4Gb-uh-nom"; */
+"4Gb-uh-nom.text" = "સિટી";
+
+/* Class = "UILabel"; text = "Product 1|5"; ObjectID = "51Q-g6-Iae"; */
+"51Q-g6-Iae.text" = "Product 1|5";
+
+/* Class = "UILabel"; text = "Product 1|5"; ObjectID = "6I0-ai-vR7"; */
+"6I0-ai-vR7.text" = "Product 1|5";
+
+/* Class = "UILabel"; text = "ID"; ObjectID = "7yQ-gO-73D"; */
+"7yQ-gO-73D.text" = "આયડી";
+
+/* Class = "UILabel"; text = "NearMe"; ObjectID = "9VO-yZ-g0B"; */
+"9VO-yZ-g0B.text" = "નિયરમી";
+
+/* Class = "UILabel"; text = "Raj Oriya"; ObjectID = "AE1-wa-zE6"; */
+"AE1-wa-zE6.text" = "Raj Oriya";
+
+/* Class = "UILabel"; text = "23-10-2018"; ObjectID = "BO2-is-7zy"; */
+"BO2-is-7zy.text" = "23-10-2018";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Bgz-RQ-gwq"; */
+"Bgz-RQ-gwq.text" = "Label";
+
+/* Class = "UILabel"; text = "Not Checked IN Yet"; ObjectID = "BnJ-Wj-fu3"; */
+"BnJ-Wj-fu3.text" = "હજુ સુધી ચેક-ઈન કર્યું નથી";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Boa-eV-Uqt"; */
+"Boa-eV-Uqt.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Contact/Customer/Mobile"; ObjectID = "CF7-F0-BO1"; */
+"CF7-F0-BO1.placeholder" = "કોન્ટેક્ટ/કસ્ટમર/મોબાઈલ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CW9-cm-cwP"; */
+"CW9-cm-cwP.text" = "Label";
+
+/* Class = "UILabel"; text = "ID"; ObjectID = "EO2-rD-rGE"; */
+"EO2-rD-rGE.text" = "આયડી";
+
+/* Class = "UILabel"; text = "Not Checked IN Yet"; ObjectID = "EpS-KN-jAo"; */
+"EpS-KN-jAo.text" = "હજુ સુધી ચેક-ઈન કર્યું નથી";
+
+/* Class = "UILabel"; text = "CUSTOMER LIST"; ObjectID = "FhB-Aw-t76"; */
+"FhB-Aw-t76.text" = "કસ્ટમર લિસ્ટ";
+
+/* Class = "UITextField"; placeholder = "State"; ObjectID = "HFy-MD-H4f"; */
+"HFy-MD-H4f.placeholder" = "State";
+
+/* Class = "UILabel"; text = "14"; ObjectID = "HpC-c3-BSm"; */
+"HpC-c3-BSm.text" = "14";
+
+/* Class = "UILabel"; text = "CONTACTS LIST"; ObjectID = "HxY-ha-KTs"; */
+"HxY-ha-KTs.text" = "કોન્ટેક્ટસ લિસ્ટ";
+
+/* Class = "UILabel"; text = "Permanent"; ObjectID = "IMQ-Bs-8qv"; */
+"IMQ-Bs-8qv.text" = "પર્મનન્ટ";
+
+/* Class = "UITextField"; placeholder = "Address Line2"; ObjectID = "IlG-kd-6Oe"; */
+"IlG-kd-6Oe.placeholder" = "એડ્ડ્રેસ લાઈન 2";
+
+/* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "Irj-NQ-gAa"; */
+"Irj-NQ-gAa.normalTitle" = "એડિટ";
+
+/* Class = "UILabel"; text = "Outcome:"; ObjectID = "JyZ-FE-xXk"; */
+"JyZ-FE-xXk.text" = "આઉટકમ:";
+
+/* Class = "UITextField"; placeholder = "City"; ObjectID = "KmG-m3-79L"; */
+"KmG-m3-79L.placeholder" = "સિટી";
+
+/* Class = "UILabel"; text = "Created By:"; ObjectID = "Li2-Fm-Y7q"; */
+"Li2-Fm-Y7q.text" = "ક્રિએટેડ બાય:";
+
+/* Class = "UITextField"; placeholder = "Pincode"; ObjectID = "Noj-ac-eLj"; */
+"Noj-ac-eLj.placeholder" = "પીન કોડ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Pic-ga-JsU"; */
+"Pic-ga-JsU.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Search By:"; ObjectID = "QIz-QD-iQT"; */
+"QIz-QD-iQT.text" = "સર્ચ બાય:";
+
+/* Class = "UILabel"; text = "VENDOR LIST"; ObjectID = "QsA-35-u2P"; */
+"QsA-35-u2P.text" = "વેન્ડર લિસ્ટ";
+
+/* Class = "UITextField"; placeholder = "Pincode"; ObjectID = "R3G-in-7S2"; */
+"R3G-in-7S2.placeholder" = "પીન કોડ";
+
+/* Class = "UILabel"; text = "Raj Oriya"; ObjectID = "RSX-Ry-sdB"; */
+"RSX-Ry-sdB.text" = "Raj Oriya";
+
+/* Class = "UILabel"; text = "Outcome:"; ObjectID = "TRP-da-xHf"; */
+"TRP-da-xHf.text" = "આઉટકમ:";
+
+/* Class = "UILabel"; text = "Customer Not Mapped"; ObjectID = "TZ9-fV-uc5"; */
+"TZ9-fV-uc5.text" = "કસ્ટમર મેપ નથી";
+
+/* Class = "UILabel"; text = "23-10-2018"; ObjectID = "Tqs-9Z-jro"; */
+"Tqs-9Z-jro.text" = "23-10-2018";
+
+/* Class = "UILabel"; text = "24-10-2018"; ObjectID = "Urt-Om-56g"; */
+"Urt-Om-56g.text" = "24-10-2018";
+
+/* Class = "UIButton"; normalTitle = "CANCEL"; ObjectID = "W0N-Eb-JrQ"; */
+"W0N-Eb-JrQ.normalTitle" = "કેન્સલ";
+
+/* Class = "UILabel"; text = "This is a pop up eeivnievnivn ufuiwenwi enwifuniwufnwfiuwnfwifuwn fiuwfnwiuwnfiwunf wifuwnfiuwnfiwufn wfiuwfniwufnwfiuwnfiwufn"; ObjectID = "WCb-pV-mci"; */
+"WCb-pV-mci.text" = "This is a pop up eeivnievnivn ufuiwenwi enwifuniwufnwfiuwnfwifuwn fiuwfnwiuwnfiwunf wifuwnfiuwnfiwufn wfiuwfniwufnwfiuwnfiwufn";
+
+/* Class = "UITextField"; placeholder = "Country"; ObjectID = "XoZ-HT-4CJ"; */
+"XoZ-HT-4CJ.placeholder" = "દેશ";
+
+/* Class = "UILabel"; text = "Outcome:"; ObjectID = "XwM-y5-bT0"; */
+"XwM-y5-bT0.text" = "આઉટકમ:";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "Yvu-Km-M5V"; */
+"Yvu-Km-M5V.normalTitle" = "ઓકે";
+
+/* Class = "UITextField"; placeholder = "Vendor/Mobile"; ObjectID = "Z6B-s3-K7a"; */
+"Z6B-s3-K7a.placeholder" = "વેન્ડર/મોબાઈલ";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "a4J-ah-4dW"; */
+"a4J-ah-4dW.normalTitle" = "કેન્સલ";
+
+/* Class = "UILabel"; text = "Outcome:"; ObjectID = "abE-La-FYQ"; */
+"abE-La-FYQ.text" = "આઉટકમ:";
+
+/* Class = "UILabel"; text = "Outcome:"; ObjectID = "ckn-Oq-B29"; */
+"ckn-Oq-B29.text" = "આઉટકમ:";
+
+/* Class = "UILabel"; text = "Outcome:"; ObjectID = "dfg-Mn-SP2"; */
+"dfg-Mn-SP2.text" = "આઉટકમ:";
+
+/* Class = "UILabel"; text = "Title Label"; ObjectID = "dlY-du-9jV"; */
+"dlY-du-9jV.text" = "Title Label";
+
+/* Class = "UILabel"; text = "1500"; ObjectID = "dwH-G9-hHc"; */
+"dwH-G9-hHc.text" = "1500";
+
+/* Class = "UITextField"; placeholder = "Contact/Customer/Mobile"; ObjectID = "dy7-ry-YoL"; */
+"dy7-ry-YoL.placeholder" = "કોન્ટેક્ટ/કસ્ટમર/મોબાઈલ";
+
+/* Class = "UILabel"; text = "Outcome:"; ObjectID = "e9b-7q-v9y"; */
+"e9b-7q-v9y.text" = "આઉટકમ:";
+
+/* Class = "UILabel"; text = "Raj Oriya"; ObjectID = "f2s-WO-Cfi"; */
+"f2s-WO-Cfi.text" = "Raj Oriya";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "fAl-0F-kgI"; */
+"fAl-0F-kgI.normalTitle" = "ઓકે";
+
+/* Class = "UITextField"; placeholder = "Town/City"; ObjectID = "feL-K1-9mf"; */
+"feL-K1-9mf.placeholder" = "ટાઉન/સિટી";
+
+/* Class = "UILabel"; text = "Created By:"; ObjectID = "fnH-Qr-kqp"; */
+"fnH-Qr-kqp.text" = "ક્રિએટેડ બાય:";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "fwK-0r-mjO"; */
+"fwK-0r-mjO.normalTitle" = "ઓકે";
+
+/* Class = "UILabel"; text = "Pincode"; ObjectID = "gAz-th-vlr"; */
+"gAz-th-vlr.text" = "પીન કોડ";
+
+/* Class = "UILabel"; text = "Mobile:"; ObjectID = "h1F-6X-xHk"; */
+"h1F-6X-xHk.text" = "મોબાઈલ:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hCT-2o-ctH"; */
+"hCT-2o-ctH.text" = "Label";
+
+/* Class = "UILabel"; text = "1500"; ObjectID = "i0u-ly-dBn"; */
+"i0u-ly-dBn.text" = "1500";
+
+/* Class = "UILabel"; text = "Not Checked IN Yet"; ObjectID = "iLP-ba-N15"; */
+"iLP-ba-N15.text" = "હજુ સુધી ચેક-ઈન કર્યું નથી";
+
+/* Class = "UILabel"; text = "24-10-2018"; ObjectID = "iXF-4c-5te"; */
+"iXF-4c-5te.text" = "24-10-2018";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "iaP-LQ-rdg"; */
+"iaP-LQ-rdg.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jLf-Oi-7fM"; */
+"jLf-Oi-7fM.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Customer Not Mapped"; ObjectID = "jMt-ie-Lyw"; */
+"jMt-ie-Lyw.text" = "કસ્ટમર મેપ નથી";
+
+/* Class = "UILabel"; text = "Outcome:"; ObjectID = "jwK-sa-Nd7"; */
+"jwK-sa-Nd7.text" = "આઉટકમ:";
+
+/* Class = "UILabel"; text = "Raj Oriya"; ObjectID = "kI3-nU-a8h"; */
+"kI3-nU-a8h.text" = "Raj Oriya";
+
+/* Class = "UILabel"; text = "Tel.:"; ObjectID = "kM0-cg-jvV"; */
+"kM0-cg-jvV.text" = "ટેલ.:";
+
+/* Class = "UIButton"; normalTitle = "werrwerwrwrwwerwrerw wre re"; ObjectID = "lsm-Es-XD6"; */
+"lsm-Es-XD6.normalTitle" = "werrwerwrwrwwerwrerw wre re";
+
+/* Class = "UIButton"; normalTitle = "Close"; ObjectID = "mHy-fc-uAP"; */
+"mHy-fc-uAP.normalTitle" = "કલોઝ";
+
+/* Class = "UITextField"; placeholder = "Address Line1"; ObjectID = "nBW-Gs-0yJ"; */
+"nBW-Gs-0yJ.placeholder" = "એડ્ડ્રેસ લાઈન 1";
+
+/* Class = "UITextField"; placeholder = "Customer/Mobile"; ObjectID = "nCH-Hc-Git"; */
+"nCH-Hc-Git.placeholder" = "કસ્ટમર/મોબાઈલ";
+
+/* Class = "UILabel"; text = "Select Customer"; ObjectID = "nKV-sP-Kzp"; */
+"nKV-sP-Kzp.text" = "સિલેક્ટ કસ્ટમર";
+
+/* Class = "UITextField"; placeholder = "Radius(In Meter)"; ObjectID = "pVb-0k-ISY"; */
+"pVb-0k-ISY.placeholder" = "રેડિયસ(મીટરમાં)";
+
+/* Class = "UILabel"; text = "Raj Oriya"; ObjectID = "pkV-NC-qlg"; */
+"pkV-NC-qlg.text" = "Raj Oriya";
+
+/* Class = "UILabel"; text = "Not Checked IN Yet"; ObjectID = "qfO-jP-fX7"; */
+"qfO-jP-fX7.text" = "હજુ સુધી ચેક-ઈન કર્યું નથી";
+
+/* Class = "UILabel"; text = "Raj Oriya"; ObjectID = "r8r-1w-yjY"; */
+"r8r-1w-yjY.text" = "Raj Oriya";
+
+/* Class = "UILabel"; text = "12345"; ObjectID = "smw-0i-yvx"; */
+"smw-0i-yvx.text" = "12345";
+
+/* Class = "UILabel"; text = "23-10-2018"; ObjectID = "u5U-RO-tl6"; */
+"u5U-RO-tl6.text" = "23-10-2018";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "uT5-O7-2sT"; */
+"uT5-O7-2sT.text" = "નામ:";
+
+/* Class = "UILabel"; text = "23-10-2018"; ObjectID = "vHQ-bB-rXP"; */
+"vHQ-bB-rXP.text" = "23-10-2018";
+
+/* Class = "UILabel"; text = "Outcome:"; ObjectID = "x8E-gU-40O"; */
+"x8E-gU-40O.text" = "આઉટકમ:";
+
+/* Class = "UILabel"; text = "Customer Not Mapped"; ObjectID = "x8K-C3-rKO"; */
+"x8K-C3-rKO.text" = "કસ્ટમર મેપ નથી";
+
+/* Class = "UILabel"; text = "CONTACTS LIST"; ObjectID = "xvM-kA-JqI"; */
+"xvM-kA-JqI.text" = "કોન્ટેક્ટસ લિસ્ટ";
+
+/* Class = "UILabel"; text = "23-10-2018"; ObjectID = "ykN-8f-mye"; */
+"ykN-8f-mye.text" = "23-10-2018";
+
+/* Class = "UILabel"; text = "23-10-2018"; ObjectID = "zKp-Yy-nR9"; */
+"zKp-Yy-nR9.text" = "23-10-2018";
+
+/* Class = "UILabel"; text = "Budget"; ObjectID = "zez-kQ-Nj6"; */
+"zez-kQ-Nj6.text" = "બજેટ";
+
+/* Class = "UILabel"; text = "12345"; ObjectID = "zhf-Se-54F"; */
+"zhf-Se-54F.text" = "12345";
