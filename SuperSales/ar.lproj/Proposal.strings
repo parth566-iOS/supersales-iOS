@@ -1,0 +1,210 @@
+
+/* Class = "UILabel"; text = "99-99-9999"; ObjectID = "1yT-KV-gIt"; */
+"1yT-KV-gIt.text" = "99-99-9999";
+
+/* Class = "UIButton"; normalTitle = "ACCEPT"; ObjectID = "21a-Bd-DcH"; */
+"21a-Bd-DcH.normalTitle" = "ACCEPT";
+
+/* Class = "UILabel"; text = "Add New Contact"; ObjectID = "21u-tZ-sPa"; */
+"21u-tZ-sPa.text" = "إضافة جهة اتصال جديدة";
+
+/* Class = "UILabel"; text = "DIRECT PROPOSAL?"; ObjectID = "2rq-kR-4rQ"; */
+"2rq-kR-4rQ.text" = "DIRECT PROPOSAL?";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "3BS-qp-w56"; */
+"3BS-qp-w56.text" = "0.00";
+
+/* Class = "UILabel"; text = "Gross Amount"; ObjectID = "3XH-wO-HOG"; */
+"3XH-wO-HOG.text" = "Gross Amount";
+
+/* Class = "UITextField"; placeholder = "Price"; ObjectID = "3yM-Xs-xGO"; */
+"3yM-Xs-xGO.placeholder" = "Price";
+
+/* Class = "UILabel"; text = "Gross Amount"; ObjectID = "5lY-Ii-CYm"; */
+"5lY-Ii-CYm.text" = "Gross Amount";
+
+/* Class = "UILabel"; text = "Select Contact"; ObjectID = "6VR-SS-eNe"; */
+"6VR-SS-eNe.text" = "Select Contact";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "6hp-eo-m6M"; */
+"6hp-eo-m6M.placeholder" = "الوصف";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "8W2-z4-B1k"; */
+"8W2-z4-B1k.text" = "0.00";
+
+/* Class = "UILabel"; text = "Proposal No:"; ObjectID = "8p3-Rj-Ddu"; */
+"8p3-Rj-Ddu.text" = "Proposal No:";
+
+/* Class = "UITextField"; placeholder = "Action needed to get order"; ObjectID = "9C2-qN-VYA"; */
+"9C2-qN-VYA.placeholder" = "Action needed to get order";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "9Vy-VD-huO"; */
+"9Vy-VD-huO.text" = "Discount";
+
+/* Class = "UILabel"; text = "SGST @6.0%"; ObjectID = "9oJ-ap-ScT"; */
+"9oJ-ap-ScT.text" = "SGST @6.0%";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "B4f-a8-Ktj"; */
+"B4f-a8-Ktj.placeholder" = "الوصف";
+
+/* Class = "UILabel"; text = "10000"; ObjectID = "BGo-rW-X1F"; */
+"BGo-rW-X1F.text" = "10000";
+
+/* Class = "UILabel"; text = "6S"; ObjectID = "DKM-KC-CJ2"; */
+"DKM-KC-CJ2.text" = "6S";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "DO6-CC-K6E"; */
+"DO6-CC-K6E.text" = "0.00";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Dge-uA-5YD"; */
+"Dge-uA-5YD.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Eh9-D4-dxH"; */
+"Eh9-D4-dxH.text" = "Label";
+
+/* Class = "UILabel"; text = "SGST @6.0%"; ObjectID = "GfO-LE-sDi"; */
+"GfO-LE-sDi.text" = "SGST @6.0%";
+
+/* Class = "UITextField"; placeholder = "Order Expected Date"; ObjectID = "I18-6g-iZ0"; */
+"I18-6g-iZ0.placeholder" = "التاريخ المتوقع للطلب";
+
+/* Class = "UILabel"; text = "Add Product Details"; ObjectID = "LGr-7T-HbQ"; */
+"LGr-7T-HbQ.text" = "إضافة تفاصيل المنتج";
+
+/* Class = "UITextField"; placeholder = "Quantity"; ObjectID = "LQp-Px-uVW"; */
+"LQp-Px-uVW.placeholder" = "Quantity";
+
+/* Class = "UILabel"; text = "Select Lead"; ObjectID = "MQK-8Y-pvL"; */
+"MQK-8Y-pvL.text" = "Select Lead";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "N30-oH-zNM"; */
+"N30-oH-zNM.text" = "0.00";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "OS3-dC-2h9"; */
+"OS3-dC-2h9.text" = "0.00";
+
+/* Class = "UITextField"; placeholder = "Discount"; ObjectID = "OaF-nx-9KA"; */
+"OaF-nx-9KA.placeholder" = "Discount";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "Piz-AQ-XOj"; */
+"Piz-AQ-XOj.text" = "0.00";
+
+/* Class = "UILabel"; text = "Total Amount"; ObjectID = "S0m-Et-lof"; */
+"S0m-Et-lof.text" = "Total Amount";
+
+/* Class = "UILabel"; text = "Select Contacts"; ObjectID = "S8L-Vz-ZXf"; */
+"S8L-Vz-ZXf.text" = "Select Contacts";
+
+/* Class = "UIButton"; normalTitle = "REJECT"; ObjectID = "Sy2-vu-cFU"; */
+"Sy2-vu-cFU.normalTitle" = "REJECT";
+
+/* Class = "UILabel"; text = "SGST @6.0%"; ObjectID = "Tc2-gK-luI"; */
+"Tc2-gK-luI.text" = "SGST @6.0%";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "VIl-JE-mzo"; */
+"VIl-JE-mzo.text" = "0.00";
+
+/* Class = "UILabel"; text = "890"; ObjectID = "W7j-Nc-5Mt"; */
+"W7j-Nc-5Mt.text" = "890";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "WuP-ge-nJl"; */
+"WuP-ge-nJl.text" = "Label";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "XMK-Tx-Kkn"; */
+"XMK-Tx-Kkn.text" = "0.00";
+
+/* Class = "UILabel"; text = "Add New Customer"; ObjectID = "XeM-5s-Fl5"; */
+"XeM-5s-Fl5.text" = "أضف زبون جديد";
+
+/* Class = "UITextField"; placeholder = "Discount"; ObjectID = "Yne-3F-Z2d"; */
+"Yne-3F-Z2d.placeholder" = "Discount";
+
+/* Class = "UITextField"; placeholder = "Discount"; ObjectID = "arQ-eP-IyR"; */
+"arQ-eP-IyR.placeholder" = "Discount";
+
+/* Class = "UILabel"; text = "Total Amount"; ObjectID = "bMB-bh-RXG"; */
+"bMB-bh-RXG.text" = "Total Amount";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bOI-4e-wee"; */
+"bOI-4e-wee.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "bTs-25-gsI"; */
+"bTs-25-gsI.normalTitle" = "إرسال";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "eWj-cp-vFX"; */
+"eWj-cp-vFX.text" = "0.00";
+
+/* Class = "UILabel"; text = "Products:"; ObjectID = "gSE-wg-c1a"; */
+"gSE-wg-c1a.text" = "المنتجات:";
+
+/* Class = "UITextField"; placeholder = "Discount"; ObjectID = "ggw-jl-Jmp"; */
+"ggw-jl-Jmp.placeholder" = "Discount";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "gy6-Up-Xh3"; */
+"gy6-Up-Xh3.text" = "0.00";
+
+/* Class = "UILabel"; text = "Select Customer"; ObjectID = "hhV-oO-UUW"; */
+"hhV-oO-UUW.text" = "تحديد العميل";
+
+/* Class = "UILabel"; text = "Product Net Amount"; ObjectID = "iAg-k4-mxr"; */
+"iAg-k4-mxr.text" = "Product Net Amount";
+
+/* Class = "UILabel"; text = "Customer Not Mapped"; ObjectID = "iPq-ZG-XIt"; */
+"iPq-ZG-XIt.text" = "Customer Not Mapped";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "ixE-gI-Fue"; */
+"ixE-gI-Fue.text" = "0.00";
+
+/* Class = "UILabel"; text = "Add Product Details"; ObjectID = "jCu-UQ-hX3"; */
+"jCu-UQ-hX3.text" = "إضافة تفاصيل المنتج";
+
+/* Class = "UILabel"; text = "Customer Details"; ObjectID = "jgc-Nh-1Er"; */
+"jgc-Nh-1Er.text" = "تفاصيل العميل";
+
+/* Class = "UILabel"; text = "SGST @6.0%"; ObjectID = "ku2-zH-lds"; */
+"ku2-zH-lds.text" = "SGST @6.0%";
+
+/* Class = "UILabel"; text = "Net Amount"; ObjectID = "kyB-2a-29Q"; */
+"kyB-2a-29Q.text" = "Net Amount";
+
+/* Class = "UILabel"; text = "6S"; ObjectID = "o00-ud-sDG"; */
+"o00-ud-sDG.text" = "6S";
+
+/* Class = "UILabel"; text = "10000"; ObjectID = "ojn-ne-lre"; */
+"ojn-ne-lre.text" = "10000";
+
+/* Class = "UILabel"; text = "Product Net Amount"; ObjectID = "pqo-1H-Nd7"; */
+"pqo-1H-Nd7.text" = "Product Net Amount";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "qBU-tv-yKP"; */
+"qBU-tv-yKP.text" = "0.00";
+
+/* Class = "UITextField"; placeholder = "Quantity"; ObjectID = "qra-ak-HKg"; */
+"qra-ak-HKg.placeholder" = "Quantity";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "sWd-nq-npG"; */
+"sWd-nq-npG.text" = "0.00";
+
+/* Class = "UITextField"; placeholder = "Price"; ObjectID = "urD-Fa-Ssy"; */
+"urD-Fa-Ssy.placeholder" = "Price";
+
+/* Class = "UIButton"; normalTitle = "SAVE"; ObjectID = "v6h-BW-Umd"; */
+"v6h-BW-Umd.normalTitle" = "حفظ";
+
+/* Class = "UILabel"; text = "Net Amount"; ObjectID = "wZc-1T-dKl"; */
+"wZc-1T-dKl.text" = "Net Amount";
+
+/* Class = "UILabel"; text = "Product Amount"; ObjectID = "wfn-xZ-lrH"; */
+"wfn-xZ-lrH.text" = "Product Amount";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "wiA-cO-fPa"; */
+"wiA-cO-fPa.text" = "0.00";
+
+/* Class = "UILabel"; text = "Product Amount"; ObjectID = "y7q-lF-CEI"; */
+"y7q-lF-CEI.text" = "Product Amount";
+
+/* Class = "UILabel"; text = "Add Product Details"; ObjectID = "z0D-CV-JWD"; */
+"z0D-CV-JWD.text" = "إضافة تفاصيل المنتج";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "zuA-uE-f9F"; */
+"zuA-uE-f9F.text" = "Discount";
